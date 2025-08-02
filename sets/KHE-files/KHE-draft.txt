@@ -1,0 +1,4626 @@
+﻿[CustomCards]
+	[
+		{
+			"name": "Follow the Wind",
+			"rarity": "common",
+			"mana_cost": "{2}{W}",
+			"type": "Legendary Artifact — Equipment Keyblade",
+			"collector_number": "8",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/8_Follow the Wind.png"
+			}
+		},
+		{
+			"name": "Nobody Dusk",
+			"rarity": "common",
+			"mana_cost": "{1}{B}",
+			"type": "Creature — Nobody Minion",
+			"collector_number": "147",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/147_Nobody Dusk.png"
+			}
+		},
+		{
+			"name": "Summon Meow Wow",
+			"rarity": "common",
+			"mana_cost": "{1}{W}",
+			"type": "Enchantment Creature — Saga Cat Dog",
+			"collector_number": "46",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/46_Summon Meow Wow.png"
+			}
+		},
+		{
+			"name": "Nobody Creeper",
+			"rarity": "common",
+			"mana_cost": "{B}",
+			"type": "Creature — Nobody Minion",
+			"collector_number": "146",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/146_Nobody Creeper.png"
+			}
+		},
+		{
+			"name": "Summon Simba",
+			"rarity": "common",
+			"mana_cost": "{3}{W}",
+			"type": "Enchantment Creature — Saga Cat",
+			"collector_number": "47",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/47_Summon Simba.png"
+			}
+		},
+		{
+			"name": "Visit To The Final World",
+			"rarity": "common",
+			"mana_cost": "{W}",
+			"type": "Instant",
+			"collector_number": "54",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/54_Visit To The Final World.png"
+			}
+		},
+		{
+			"name": "Trick Ghost",
+			"rarity": "common",
+			"mana_cost": "{2}{W}",
+			"type": "Creature — Heartless Spirit",
+			"collector_number": "51",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/51_Trick Ghost.png"
+			}
+		},
+		{
+			"name": "Sleeping Lion",
+			"rarity": "common",
+			"mana_cost": "{4}{W}",
+			"type": "Legendary Artifact — Equipment Keyblade",
+			"collector_number": "38",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/38_Sleeping Lion.png"
+			}
+		},
+		{
+			"name": "Light, Give Me Strength!",
+			"rarity": "common",
+			"mana_cost": "{1}{W}",
+			"type": "Enchantment — Aura",
+			"collector_number": "24",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/24_Light, Give Me Strength!.png"
+			}
+		},
+		{
+			"name": "Oathkeeper, Charm of Promise",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{W}",
+			"type": "Legendary Artifact — Equipment Keyblade",
+			"collector_number": "29",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/29_Oathkeeper, Charm of Promise.png"
+			}
+		},
+		{
+			"name": "Kingdom Key",
+			"rarity": "common",
+			"mana_cost": "{2}{W}",
+			"type": "Legendary Artifact — Equipment Keyblade",
+			"collector_number": "21",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/21_Kingdom Key.png"
+			}
+		},
+		{
+			"name": "Destiny Islands Trio",
+			"rarity": "common",
+			"mana_cost": "{W}",
+			"type": "Instant",
+			"collector_number": "6",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/6_Destiny Islands Trio.png"
+			}
+		},
+		{
+			"name": "Sora's Sleeping Pod",
+			"rarity": "common",
+			"mana_cost": "{2}{W}",
+			"type": "Enchantment — Aura",
+			"collector_number": "42",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/42_Sora's Sleeping Pod.png"
+			}
+		},
+		{
+			"name": "Heartless Battleship",
+			"rarity": "common",
+			"mana_cost": "{1}{U}",
+			"type": "Creature — Heartless Pirate",
+			"collector_number": "75",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/75_Heartless Battleship.png"
+			}
+		},
+		{
+			"name": "Screwdiver",
+			"rarity": "common",
+			"mana_cost": "{1}{U}",
+			"type": "Creature — Heartless Merfolk",
+			"collector_number": "88",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/88_Screwdiver.png"
+			}
+		},
+		{
+			"name": "Heartless Gargoyle Warrior",
+			"rarity": "common",
+			"mana_cost": "{3}{G}",
+			"type": "Artifact Creature — Heartless Gargoyle Warrior",
+			"collector_number": "251",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/251_Heartless Gargoyle Warrior.png"
+			}
+		},
+		{
+			"name": "Heartless Gargoyle",
+			"rarity": "common",
+			"mana_cost": "{2}{U}",
+			"type": "Creature — Heartless Gargoyle",
+			"collector_number": "76",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/76_Heartless Gargoyle.png"
+			}
+		},
+		{
+			"name": "Guard Armor",
+			"rarity": "common",
+			"mana_cost": "{5}{U}",
+			"type": "Artifact Creature — Heartless Robot",
+			"collector_number": "73",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/73_Guard Armor.png"
+			}
+		},
+		{
+			"name": "Icy Cube",
+			"rarity": "common",
+			"mana_cost": "{U}",
+			"type": "Creature — Heartless Elemental",
+			"collector_number": "79",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/79_Icy Cube.png"
+			}
+		},
+		{
+			"name": "Jiminy Cricket, Journal Author",
+			"rarity": "common",
+			"mana_cost": "{U}",
+			"type": "Legendary Creature — Insect Advisor",
+			"collector_number": "82",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/82_Jiminy Cricket, Journal Author.png"
+			}
+		},
+		{
+			"name": "Blue Rhapsody",
+			"rarity": "common",
+			"mana_cost": "{3}{U}",
+			"type": "Creature — Heartless Elemental",
+			"collector_number": "63",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/63_Blue Rhapsody.png"
+			}
+		},
+		{
+			"name": "Summon Ariel",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{U}",
+			"type": "Enchantment Creature — Saga Merfolk",
+			"collector_number": "96",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/96_Summon Ariel.png"
+			}
+		},
+		{
+			"name": "Stored in Data",
+			"rarity": "common",
+			"mana_cost": "{2}{U}",
+			"type": "Enchantment — Aura",
+			"collector_number": "95",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/95_Stored in Data.png"
+			}
+		},
+		{
+			"name": "Nobody Memories",
+			"rarity": "common",
+			"mana_cost": "{1}{U}",
+			"type": "Instant",
+			"collector_number": "85",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/85_Nobody Memories.png"
+			}
+		},
+		{
+			"name": "Card Break",
+			"rarity": "common",
+			"mana_cost": "{2}{U}",
+			"type": "Instant",
+			"collector_number": "64",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/64_Card Break.png"
+			}
+		},
+		{
+			"name": "Deep Freeze!",
+			"rarity": "common",
+			"mana_cost": "{1}{U}",
+			"type": "Instant",
+			"collector_number": "71",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/71_Deep Freeze!.png"
+			}
+		},
+		{
+			"name": "Gummi Route Dispute",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{U}",
+			"type": "Sorcery",
+			"collector_number": "74",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/74_Gummi Route Dispute.png"
+			}
+		},
+		{
+			"name": "Ready to Fight",
+			"rarity": "common",
+			"mana_cost": "{U}",
+			"type": "Enchantment",
+			"collector_number": "87",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/87_Ready to Fight.png"
+			}
+		},
+		{
+			"name": "Succumb to Darkness",
+			"rarity": "common",
+			"mana_cost": "{B}{B}",
+			"type": "Sorcery",
+			"collector_number": "158",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/158_Succumb to Darkness.png"
+			}
+		},
+		{
+			"name": "Chain of Memories",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{U}",
+			"type": "Sorcery",
+			"collector_number": "65",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/65_Chain of Memories.png"
+			}
+		},
+		{
+			"name": "Heartless Shadow",
+			"rarity": "common",
+			"mana_cost": "{1}{B}",
+			"type": "Creature — Heartless Shade",
+			"collector_number": "132",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/132_Heartless Shadow.png"
+			}
+		},
+		{
+			"name": "Barrel Spider",
+			"rarity": "common",
+			"mana_cost": "{1}{B}",
+			"type": "Artifact Creature — Heartless Spider",
+			"collector_number": "112",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/112_Barrel Spider.png"
+			}
+		},
+		{
+			"name": "Heartless Wizard",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{B}",
+			"type": "Creature — Heartless Wizard",
+			"collector_number": "133",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/133_Heartless Wizard.png"
+			}
+		},
+		{
+			"name": "Black Fungus",
+			"rarity": "common",
+			"mana_cost": "{2}{B}",
+			"type": "Creature — Heartless Fungus",
+			"collector_number": "116",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/116_Black Fungus.png"
+			}
+		},
+		{
+			"name": "Bargain of Darkness",
+			"rarity": "common",
+			"mana_cost": "{1}{B}",
+			"type": "Enchantment — Aura",
+			"collector_number": "111",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/111_Bargain of Darkness.png"
+			}
+		},
+		{
+			"name": "Bulky Vendor",
+			"rarity": "common",
+			"mana_cost": "{B}{B}",
+			"type": "Artifact Creature — Heartless Robot",
+			"collector_number": "117",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/117_Bulky Vendor.png"
+			}
+		},
+		{
+			"name": "Maleficent's Darkness",
+			"rarity": "common",
+			"mana_cost": "{B}",
+			"type": "Instant",
+			"collector_number": "140",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/140_Maleficent's Darkness.png"
+			}
+		},
+		{
+			"name": "Large Body",
+			"rarity": "common",
+			"mana_cost": "{4}{B}",
+			"type": "Creature — Heartless Rogue",
+			"collector_number": "136",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/136_Large Body.png"
+			}
+		},
+		{
+			"name": "Nobody Reaper",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{B}",
+			"type": "Creature — Nobody Assassin",
+			"collector_number": "149",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/149_Nobody Reaper.png"
+			}
+		},
+		{
+			"name": "Nobody Berserker",
+			"rarity": "common",
+			"mana_cost": "{3}{B}",
+			"type": "Creature — Nobody Berserker",
+			"collector_number": "145",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/145_Nobody Berserker.png"
+			}
+		},
+		{
+			"name": "Heartless Behemoth",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{B}",
+			"type": "Creature — Heartless Beast",
+			"collector_number": "127",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/127_Heartless Behemoth.png"
+			}
+		},
+		{
+			"name": "Thirst Of The Darkling's",
+			"rarity": "common",
+			"mana_cost": "{B}",
+			"type": "Instant",
+			"collector_number": "159",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/159_Thirst Of The Darkling's.png"
+			}
+		},
+		{
+			"name": "Black Coat of Organization XIII",
+			"rarity": "common",
+			"mana_cost": "{B}",
+			"type": "Instant",
+			"collector_number": "115",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/115_Black Coat of Organization XIII.png"
+			}
+		},
+		{
+			"name": "Darkside Destruction",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{B}",
+			"type": "Sorcery",
+			"collector_number": "120",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/120_Darkside Destruction.png"
+			}
+		},
+		{
+			"name": "Night of Fate",
+			"rarity": "common",
+			"mana_cost": "{2}{B}",
+			"type": "Sorcery",
+			"collector_number": "144",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/144_Night of Fate.png"
+			}
+		},
+		{
+			"name": "Saved by Mickey",
+			"rarity": "uncommon",
+			"mana_cost": "{4}{B}",
+			"type": "Sorcery",
+			"collector_number": "156",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/156_Saved by Mickey.png"
+			}
+		},
+		{
+			"name": "Gummi Ship Shortcut",
+			"rarity": "common",
+			"mana_cost": "{2}{B}",
+			"type": "Sorcery",
+			"collector_number": "126",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/126_Gummi Ship Shortcut.png"
+			}
+		},
+		{
+			"name": "Hammer Frame",
+			"rarity": "common",
+			"mana_cost": "{1}{R}",
+			"type": "Artifact Creature — Heartless Robot",
+			"collector_number": "190",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/190_Hammer Frame.png"
+			}
+		},
+		{
+			"name": "Heartless Shaman",
+			"rarity": "common",
+			"mana_cost": "{1}{R}",
+			"type": "Creature — Heartless Ape Shaman",
+			"collector_number": "191",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/191_Heartless Shaman.png"
+			}
+		},
+		{
+			"name": "Luna Bandit",
+			"rarity": "common",
+			"mana_cost": "{3}{R}",
+			"type": "Creature — Heartless Rogue",
+			"collector_number": "199",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/199_Luna Bandit.png"
+			}
+		},
+		{
+			"name": "Ursus Wielder",
+			"rarity": "common",
+			"mana_cost": "{1}{R}",
+			"type": "Creature — Human Wielder",
+			"collector_number": "218",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/218_Ursus Wielder.png"
+			}
+		},
+		{
+			"name": "Heartless Wyvern",
+			"rarity": "common",
+			"mana_cost": "{5}{R}",
+			"type": "Creature — Heartless Dragon",
+			"collector_number": "192",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/192_Heartless Wyvern.png"
+			}
+		},
+		{
+			"name": "Cid's Virus Program",
+			"rarity": "common",
+			"mana_cost": "{R}",
+			"type": "Instant",
+			"collector_number": "175",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/175_Cid's Virus Program.png"
+			}
+		},
+		{
+			"name": "Nobody Dancer",
+			"rarity": "common",
+			"mana_cost": "{2}{R}",
+			"type": "Creature — Nobody Performer",
+			"collector_number": "204",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/204_Nobody Dancer.png"
+			}
+		},
+		{
+			"name": "Nobody Dragoon",
+			"rarity": "rare",
+			"mana_cost": "{3}{R}",
+			"type": "Creature — Nobody Knight",
+			"collector_number": "205",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/205_Nobody Dragoon.png"
+			}
+		},
+		{
+			"name": "Nobody Samurai",
+			"rarity": "common",
+			"mana_cost": "{3}{R}",
+			"type": "Creature — Nobody Samurai",
+			"collector_number": "207",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/207_Nobody Samurai.png"
+			}
+		},
+		{
+			"name": "Nobody Sniper",
+			"rarity": "common",
+			"mana_cost": "{3}{R}",
+			"type": "Creature — Nobody Assassin",
+			"collector_number": "208",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/208_Nobody Sniper.png"
+			}
+		},
+		{
+			"name": "Hidden Dragon",
+			"rarity": "common",
+			"mana_cost": "{1}{R}",
+			"type": "Legendary Artifact — Equipment Keyblade",
+			"collector_number": "194",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/194_Hidden Dragon.png"
+			}
+		},
+		{
+			"name": "Bond of Flame",
+			"rarity": "common",
+			"mana_cost": "{R}",
+			"type": "Legendary Artifact — Equipment Keyblade",
+			"collector_number": "173",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/173_Bond of Flame.png"
+			}
+		},
+		{
+			"name": "Organization XIII Mission",
+			"rarity": "common",
+			"mana_cost": "{2}{R}",
+			"type": "Sorcery",
+			"collector_number": "210",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/210_Organization XIII Mission.png"
+			}
+		},
+		{
+			"name": "Thunder!",
+			"rarity": "common",
+			"mana_cost": "{R}",
+			"type": "Instant",
+			"collector_number": "217",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/217_Thunder!.png"
+			}
+		},
+		{
+			"name": "Struggle Panic",
+			"rarity": "common",
+			"mana_cost": "{2}{R}",
+			"type": "Sorcery",
+			"collector_number": "215",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/215_Struggle Panic.png"
+			}
+		},
+		{
+			"name": "Xehanort's Influence",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{R}",
+			"type": "Sorcery",
+			"collector_number": "223",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/223_Xehanort's Influence.png"
+			}
+		},
+		{
+			"name": "Pluto, Royal Companion",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{G}",
+			"type": "Legendary Creature — Dog",
+			"collector_number": "263",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/263_Pluto, Royal Companion.png"
+			}
+		},
+		{
+			"name": "Sudo Neko",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{W}",
+			"type": "Enchantment Creature — Lizard Spirit",
+			"collector_number": "44",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/44_Sudo Neko.png"
+			}
+		},
+		{
+			"name": "Ray of Hope",
+			"rarity": "common",
+			"mana_cost": "{2}{G}",
+			"type": "Sorcery",
+			"collector_number": "269",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/269_Ray of Hope.png"
+			}
+		},
+		{
+			"name": "Kooma Panda",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{U}",
+			"type": "Enchantment Creature — Bear Spirit",
+			"collector_number": "84",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/84_Kooma Panda.png"
+			}
+		},
+		{
+			"name": "Commantis",
+			"rarity": "uncommon",
+			"mana_cost": "{4}{U}",
+			"type": "Enchantment Creature — Insect Spirit",
+			"collector_number": "67",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/67_Commantis.png"
+			}
+		},
+		{
+			"name": "Hockomonkey",
+			"rarity": "common",
+			"mana_cost": "{4}{W}",
+			"type": "Enchantment Creature — Ape Spirit",
+			"collector_number": "12",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/12_Hockomonkey.png"
+			}
+		},
+		{
+			"name": "Holey Moley",
+			"rarity": "common",
+			"mana_cost": "{2}{W}",
+			"type": "Enchantment Creature — Mole Spirit",
+			"collector_number": "13",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/13_Holey Moley.png"
+			}
+		},
+		{
+			"name": "Yoggy Ram",
+			"rarity": "common",
+			"mana_cost": "{3}{U}",
+			"type": "Enchantment Creature — Sheep Spirit",
+			"collector_number": "107",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/107_Yoggy Ram.png"
+			}
+		},
+		{
+			"name": "Staggerceps",
+			"rarity": "common",
+			"mana_cost": "{3}{U}",
+			"type": "Enchantment Creature — Insect Spirit",
+			"collector_number": "93",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/93_Staggerceps.png"
+			}
+		},
+		{
+			"name": "Earth Core",
+			"rarity": "common",
+			"mana_cost": "{5}{G}",
+			"type": "Creature — Heartless Elemental Shade",
+			"collector_number": "243",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/243_Earth Core.png"
+			}
+		},
+		{
+			"name": "Pressed for Time",
+			"rarity": "common",
+			"mana_cost": "{G}",
+			"type": "Instant",
+			"collector_number": "267",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/267_Pressed for Time.png"
+			}
+		},
+		{
+			"name": "Journal of Travelled Lands",
+			"rarity": "common",
+			"mana_cost": "{1}{G}",
+			"type": "Enchantment — Aura",
+			"collector_number": "254",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/254_Journal of Travelled Lands.png"
+			}
+		},
+		{
+			"name": "Sea-Salt Trio",
+			"rarity": "common",
+			"mana_cost": "{1}{G}",
+			"type": "Instant",
+			"collector_number": "271",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/271_Sea-Salt Trio.png"
+			}
+		},
+		{
+			"name": "Organization Resignation",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{G}",
+			"type": "Sorcery",
+			"collector_number": "260",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/260_Organization Resignation.png"
+			}
+		},
+		{
+			"name": "Commune with the Composer",
+			"rarity": "common",
+			"mana_cost": "{G}",
+			"type": "Sorcery",
+			"collector_number": "236",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/236_Commune with the Composer.png"
+			}
+		},
+		{
+			"name": "Lazy Afternoons",
+			"rarity": "common",
+			"mana_cost": "{2}{G}",
+			"type": "Sorcery",
+			"collector_number": "258",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/258_Lazy Afternoons.png"
+			}
+		},
+		{
+			"name": "Soul Eater, Sword of Darkness",
+			"rarity": "rare",
+			"mana_cost": "{4}",
+			"type": "Artifact — Equipment",
+			"collector_number": "321",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/321_Soul Eater, Sword of Darkness.png"
+			}
+		},
+		{
+			"name": "Radiant Garden",
+			"rarity": "rare",
+			"mana_cost": "",
+			"type": "Legendary Land — Forest",
+			"collector_number": "347",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/347_Radiant Garden.png"
+			}
+		},
+		{
+			"name": "Hollow Bastion",
+			"rarity": "rare",
+			"mana_cost": "",
+			"type": "Legendary Land — Swamp",
+			"collector_number": "341",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/341_Hollow Bastion.png"
+			}
+		},
+		{
+			"name": "Keyblade Graveyard",
+			"rarity": "rare",
+			"mana_cost": "",
+			"type": "Legendary Land — Mountain",
+			"collector_number": "342",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/342_Keyblade Graveyard.png"
+			}
+		},
+		{
+			"name": "Disney Castle",
+			"rarity": "rare",
+			"mana_cost": "",
+			"type": "Legendary Land — Plains",
+			"collector_number": "339",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/339_Disney Castle.png"
+			}
+		},
+		{
+			"name": "The Perfected Replica",
+			"rarity": "rare",
+			"mana_cost": "{4}{B}",
+			"type": "Legendary Creature — Replica Wielder",
+			"collector_number": "154",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/154_The Perfected Replica.png"
+			}
+		},
+		{
+			"name": "Xaldin, the Whirlwind Lancer",
+			"rarity": "rare",
+			"mana_cost": "{1}{B}{R}",
+			"type": "Legendary Creature — Nobody Knight",
+			"collector_number": "289",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/289_Xaldin, the Whirlwind Lancer.png"
+			}
+		},
+		{
+			"name": "Marluxia, The Graceful Assassin",
+			"rarity": "rare",
+			"mana_cost": "{3}{B}{B}{B}",
+			"type": "Legendary Creature — Nobody Assassin",
+			"collector_number": "141",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/141_Marluxia, The Graceful Assassin.png"
+			}
+		},
+		{
+			"name": "The Realm of Darkness",
+			"rarity": "rare",
+			"mana_cost": "{2}{B}",
+			"type": "Enchantment",
+			"collector_number": "155",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/155_The Realm of Darkness.png"
+			}
+		},
+		{
+			"name": "Guardians of Light",
+			"rarity": "mythic",
+			"mana_cost": "{3}{G}",
+			"type": "Enchantment",
+			"collector_number": "249",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/249_Guardians of Light.png"
+			}
+		},
+		{
+			"name": "Chirithy",
+			"rarity": "rare",
+			"mana_cost": "{G}",
+			"type": "Legendary Creature — Cat Spirit",
+			"collector_number": "234",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/234_Chirithy.png"
+			}
+		},
+		{
+			"name": "Young Master Xehanort",
+			"rarity": "rare",
+			"mana_cost": "{3}{U}",
+			"type": "Legendary Creature — Human Wielder",
+			"collector_number": "108",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/108_Young Master Xehanort.png"
+			}
+		},
+		{
+			"name": "Foundations of the Past",
+			"rarity": "rare",
+			"mana_cost": "{1}{G}{G}",
+			"type": "Enchantment",
+			"collector_number": "245",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/245_Foundations of the Past.png"
+			}
+		},
+		{
+			"name": "Friends In My Heart",
+			"rarity": "rare",
+			"mana_cost": "{4}{G}{G}",
+			"type": "Sorcery",
+			"collector_number": "246",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/246_Friends In My Heart.png"
+			}
+		},
+		{
+			"name": "Spiked Crawler",
+			"rarity": "rare",
+			"mana_cost": "{4}{G}",
+			"type": "Artifact Creature — Heartless Robot",
+			"collector_number": "272",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/272_Spiked Crawler.png"
+			}
+		},
+		{
+			"name": "Promises to Keep",
+			"rarity": "rare",
+			"mana_cost": "{3}{G}{G}",
+			"type": "Instant",
+			"collector_number": "268",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/268_Promises to Keep.png"
+			}
+		},
+		{
+			"name": "Antlion",
+			"rarity": "rare",
+			"mana_cost": "{5}{G}",
+			"type": "Legendary Creature — Heartless Insect",
+			"collector_number": "225",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/225_Antlion.png"
+			}
+		},
+		{
+			"name": "Kurt Zisa",
+			"rarity": "rare",
+			"mana_cost": "{2}{G}{G}",
+			"type": "Legendary Creature — Heartless Warrior",
+			"collector_number": "256",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/256_Kurt Zisa.png"
+			}
+		},
+		{
+			"name": "Terra, Earthshaker",
+			"rarity": "rare",
+			"mana_cost": "{4}{R}",
+			"type": "Legendary Creature — Human Wielder",
+			"collector_number": "216",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/216_Terra, Earthshaker.png"
+			}
+		},
+		{
+			"name": "King Mickey",
+			"rarity": "rare",
+			"mana_cost": "{2}{R}",
+			"type": "Legendary Creature — Mouse Noble Wielder",
+			"collector_number": "196",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/196_King Mickey.png"
+			}
+		},
+		{
+			"name": "Rumbling Rose",
+			"rarity": "rare",
+			"mana_cost": "{4}{R}",
+			"type": "Legendary Artifact — Equipment Keyblade",
+			"collector_number": "213",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/213_Rumbling Rose.png"
+			}
+		},
+		{
+			"name": "Nobody Sorcerer",
+			"rarity": "rare",
+			"mana_cost": "{4}{B}{B}",
+			"type": "Creature — Nobody Wizard",
+			"collector_number": "150",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/150_Nobody Sorcerer.png"
+			}
+		},
+		{
+			"name": "Flash Step",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{W}",
+			"type": "Instant",
+			"collector_number": "7",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/7_Flash Step.png"
+			}
+		},
+		{
+			"name": "Ansem the Wise",
+			"rarity": "mythic",
+			"mana_cost": "{3}{U}",
+			"type": "Legendary Creature — Human Noble",
+			"collector_number": "57",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/57_Ansem the Wise.png"
+			}
+		},
+		{
+			"name": "DiZ",
+			"rarity": "rare",
+			"mana_cost": "{3}{U}",
+			"type": "Legendary Creature — Human Scientist",
+			"collector_number": "72",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/72_DiZ.png"
+			}
+		},
+		{
+			"name": "Vexen, the Chilly Academic",
+			"rarity": "rare",
+			"mana_cost": "{3}{R}",
+			"type": "Legendary Creature — Nobody Scientist",
+			"collector_number": "220",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/220_Vexen, the Chilly Academic.png"
+			}
+		},
+		{
+			"name": "Saïx, The Luna Diviner",
+			"rarity": "rare",
+			"mana_cost": "{4}{R}",
+			"type": "Legendary Creature — Nobody Berserker",
+			"collector_number": "214",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/214_Saïx, The Luna Diviner.png"
+			}
+		},
+		{
+			"name": "Withstand Combo",
+			"rarity": "rare",
+			"mana_cost": "{1}{G}",
+			"type": "Instant",
+			"collector_number": "279",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/279_Withstand Combo.png"
+			}
+		},
+		{
+			"name": "Yozora, Verum Rex",
+			"rarity": "rare",
+			"mana_cost": "{3}{U}",
+			"type": "Legendary Creature — Human Wielder",
+			"collector_number": "109",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/109_Yozora, Verum Rex.png"
+			}
+		},
+		{
+			"name": "Barrier Master",
+			"rarity": "rare",
+			"mana_cost": "{3}{U}",
+			"type": "Creature — Heartless Wizard",
+			"collector_number": "61",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/61_Barrier Master.png"
+			}
+		},
+		{
+			"name": "Xehanort's Command",
+			"rarity": "rare",
+			"mana_cost": "{3}{U}{U}",
+			"type": "Instant",
+			"collector_number": "106",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/106_Xehanort's Command.png"
+			}
+		},
+		{
+			"name": "Cloud, Olympus Combatent",
+			"rarity": "rare",
+			"mana_cost": "{4}{W}",
+			"type": "Legendary Creature — Human Soldier Mercenary",
+			"collector_number": "3",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/3_Cloud, Olympus Combatent.png"
+			}
+		},
+		{
+			"name": "Mickey's Ulima Magic",
+			"rarity": "rare",
+			"mana_cost": "{3}{W}{W}",
+			"type": "Sorcery",
+			"collector_number": "26",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/26_Mickey's Ulima Magic.png"
+			}
+		},
+		{
+			"name": "My Friends Are My Power!",
+			"rarity": "rare",
+			"mana_cost": "{6}{W}{W}",
+			"type": "Instant",
+			"collector_number": "27",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/27_My Friends Are My Power!.png"
+			}
+		},
+		{
+			"name": "Shadow Stalker",
+			"rarity": "rare",
+			"mana_cost": "{2}{U}",
+			"type": "Creature — Heartless Shade",
+			"collector_number": "91",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/91_Shadow Stalker.png"
+			}
+		},
+		{
+			"name": "Ventus, Awoken Wielder",
+			"rarity": "rare",
+			"mana_cost": "{2}{R}",
+			"type": "Legendary Creature — Human Wielder",
+			"collector_number": "219",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/219_Ventus, Awoken Wielder.png"
+			}
+		},
+		{
+			"name": "Luxord, The Gambler of Fate",
+			"rarity": "rare",
+			"mana_cost": "{4}{R}{R}",
+			"type": "Legendary Creature — Nobody Rogue",
+			"collector_number": "200",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/200_Luxord, The Gambler of Fate.png"
+			}
+		},
+		{
+			"name": "Xigbar, the Free Shooter",
+			"rarity": "rare",
+			"mana_cost": "{3}{B}{R}{G}",
+			"type": "Legendary Creature — Nobody Rogue",
+			"collector_number": "317",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/317_Xigbar, the Free Shooter.png"
+			}
+		},
+		{
+			"name": "Blossom Shower",
+			"rarity": "rare",
+			"mana_cost": "{X}{X}{G}",
+			"type": "Sorcery",
+			"collector_number": "229",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/229_Blossom Shower.png"
+			}
+		},
+		{
+			"name": "Necho Cat",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{W}",
+			"type": "Enchantment Creature — Cat Spirit",
+			"collector_number": "28",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/28_Necho Cat.png"
+			}
+		},
+		{
+			"name": "Kingdom Hearts",
+			"rarity": "uncommon",
+			"mana_cost": "{5}{W}",
+			"type": "Legendary Artifact",
+			"collector_number": "20",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/20_Kingdom Hearts.png"
+			}
+		},
+		{
+			"name": "Sea-Salt Ice Cream",
+			"rarity": "common",
+			"mana_cost": "{1}{W}",
+			"type": "Artifact — Food",
+			"collector_number": "37",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/37_Sea-Salt Ice Cream.png"
+			}
+		},
+		{
+			"name": "Komory Bat",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{W}",
+			"type": "Enchantment Creature — Bat Spirit",
+			"collector_number": "22",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/22_Komory Bat.png"
+			}
+		},
+		{
+			"name": "Light of Remind",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{W}",
+			"type": "Enchantment — Aura",
+			"collector_number": "25",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/25_Light of Remind.png"
+			}
+		},
+		{
+			"name": "Star Seeker",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{W}",
+			"type": "Legendary Artifact — Equipment Keyblade",
+			"collector_number": "43",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/43_Star Seeker.png"
+			}
+		},
+		{
+			"name": "Omega Weapon",
+			"rarity": "common",
+			"mana_cost": "{1}{W}",
+			"type": "Legendary Artifact — Equipment Keyblade",
+			"collector_number": "30",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/30_Omega Weapon.png"
+			}
+		},
+		{
+			"name": "Sora, Link To All",
+			"rarity": "mythic",
+			"mana_cost": "{2}{W}",
+			"type": "Legendary Creature — Human Wielder",
+			"collector_number": "41",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/41_Sora, Link To All.png"
+			}
+		},
+		{
+			"name": "Sora, Key to the Truth",
+			"rarity": "rare",
+			"mana_cost": "{1}{W}",
+			"type": "Legendary Creature — Human Wielder",
+			"collector_number": "39",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/39_Sora, Key to the Truth.png"
+			}
+		},
+		{
+			"name": "Organization XIII Moogle",
+			"rarity": "uncommon",
+			"mana_cost": "{3}{W}",
+			"type": "Creature — Moogle",
+			"collector_number": "31",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/31_Organization XIII Moogle.png"
+			}
+		},
+		{
+			"name": "Heal!",
+			"rarity": "uncommon",
+			"mana_cost": "{W}",
+			"type": "Instant",
+			"collector_number": "10",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/10_Heal!.png"
+			}
+		},
+		{
+			"name": "Kairi, Princess of Heart",
+			"rarity": "uncommon",
+			"mana_cost": "{W}",
+			"type": "Legendary Creature — Human Noble Wielder",
+			"collector_number": "16",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/16_Kairi, Princess of Heart.png"
+			}
+		},
+		{
+			"name": "Sora, Keyblade's Chosen",
+			"rarity": "uncommon",
+			"mana_cost": "{W}",
+			"type": "Legendary Creature — Human Wielder",
+			"collector_number": "40",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/40_Sora, Keyblade's Chosen.png"
+			}
+		},
+		{
+			"name": "Hot Rod",
+			"rarity": "uncommon",
+			"mana_cost": "{3}{U}",
+			"type": "Artifact Creature — Heartless Robot",
+			"collector_number": "78",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/78_Hot Rod.png"
+			}
+		},
+		{
+			"name": "Thirst for Recognition",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{U}{U}",
+			"type": "Instant",
+			"collector_number": "102",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/102_Thirst for Recognition.png"
+			}
+		},
+		{
+			"name": "Air Battler",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{U}",
+			"type": "Creature — Heartless Warrior",
+			"collector_number": "55",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/55_Air Battler.png"
+			}
+		},
+		{
+			"name": "Zip Slasher",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{U}",
+			"type": "Creature — Heartless Soldier",
+			"collector_number": "110",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/110_Zip Slasher.png"
+			}
+		},
+		{
+			"name": "Sign of Innocence",
+			"rarity": "common",
+			"mana_cost": "{1}{U}",
+			"type": "Legendary Artifact — Equipment Keyblade",
+			"collector_number": "92",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/92_Sign of Innocence.png"
+			}
+		},
+		{
+			"name": "Summon Mushu",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{U}",
+			"type": "Enchantment Creature — Saga Dragon",
+			"collector_number": "99",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/99_Summon Mushu.png"
+			}
+		},
+		{
+			"name": "Aqua, Keyblade Master",
+			"rarity": "rare",
+			"mana_cost": "{3}{U}",
+			"type": "Legendary Creature — Human Wielder",
+			"collector_number": "60",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/60_Aqua, Keyblade Master.png"
+			}
+		},
+		{
+			"name": "Searching The Other Side",
+			"rarity": "uncommon",
+			"mana_cost": "{U}",
+			"type": "Enchantment — Aura",
+			"collector_number": "90",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/90_Searching The Other Side.png"
+			}
+		},
+		{
+			"name": "Data Transfer",
+			"rarity": "uncommon",
+			"mana_cost": "{3}{U}",
+			"type": "Enchantment — Aura",
+			"collector_number": "69",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/69_Data Transfer.png"
+			}
+		},
+		{
+			"name": "Summon Stitch",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{U}",
+			"type": "Enchantment Creature — Saga Alien",
+			"collector_number": "100",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/100_Summon Stitch.png"
+			}
+		},
+		{
+			"name": "Summon Dumbo",
+			"rarity": "common",
+			"mana_cost": "{3}{U}",
+			"type": "Enchantment Creature — Saga Elephant",
+			"collector_number": "97",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/97_Summon Dumbo.png"
+			}
+		},
+		{
+			"name": "Into the 100 Acre Wood",
+			"rarity": "uncommon",
+			"mana_cost": "{5}{U}{U}",
+			"type": "Instant",
+			"collector_number": "80",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/80_Into the 100 Acre Wood.png"
+			}
+		},
+		{
+			"name": "Day 298 — Fracture",
+			"rarity": "uncommon",
+			"mana_cost": "{3}{R}{R}",
+			"type": "Instant",
+			"collector_number": "179",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/179_Day 298 — Fracture.png"
+			}
+		},
+		{
+			"name": "Worthy to Wield",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{R}",
+			"type": "Enchantment",
+			"collector_number": "222",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/222_Worthy to Wield.png"
+			}
+		},
+		{
+			"name": "Rejection of Fate",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{R}",
+			"type": "Legendary Artifact — Equipment Keyblade",
+			"collector_number": "211",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/211_Rejection of Fate.png"
+			}
+		},
+		{
+			"name": "Lunar Eclipse",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{B}",
+			"type": "Legendary Artifact — Equipment Keyblade",
+			"collector_number": "138",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/138_Lunar Eclipse.png"
+			}
+		},
+		{
+			"name": "Crimson Jazz",
+			"rarity": "uncommon",
+			"mana_cost": "{X}{R}{R}",
+			"type": "Creature — Heartless Elemental",
+			"collector_number": "176",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/176_Crimson Jazz.png"
+			}
+		},
+		{
+			"name": "Fat Bandit",
+			"rarity": "uncommon",
+			"mana_cost": "{3}{R}",
+			"type": "Creature — Heartless Rogue",
+			"collector_number": "185",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/185_Fat Bandit.png"
+			}
+		},
+		{
+			"name": "Fenrir",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{R}",
+			"type": "Legendary Artifact — Equipment Keyblade",
+			"collector_number": "187",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/187_Fenrir.png"
+			}
+		},
+		{
+			"name": "Axel, The Flurry of Dancing Flames",
+			"rarity": "uncommon",
+			"mana_cost": "{3}{R}",
+			"type": "Legendary Creature — Nobody Assassin",
+			"collector_number": "170",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/170_Axel, The Flurry of Dancing Flames.png"
+			}
+		},
+		{
+			"name": "Donald Duck, Court Wizard",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{R}",
+			"type": "Legendary Creature — Bird Wizard",
+			"collector_number": "183",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/183_Donald Duck, Court Wizard.png"
+			}
+		},
+		{
+			"name": "Nobody Gambler",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{R}",
+			"type": "Creature — Nobody Rogue",
+			"collector_number": "206",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/206_Nobody Gambler.png"
+			}
+		},
+		{
+			"name": "Donald's Thunder Magic",
+			"rarity": "rare",
+			"mana_cost": "{R}",
+			"type": "Instant",
+			"collector_number": "184",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/184_Donald's Thunder Magic.png"
+			}
+		},
+		{
+			"name": "Fire!",
+			"rarity": "uncommon",
+			"mana_cost": "{R}",
+			"type": "Instant",
+			"collector_number": "188",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/188_Fire!.png"
+			}
+		},
+		{
+			"name": "Hero's Crest",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{R}",
+			"type": "Legendary Artifact — Equipment Keyblade",
+			"collector_number": "193",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/193_Hero's Crest.png"
+			}
+		},
+		{
+			"name": "Day 354 — Truth",
+			"rarity": "common",
+			"mana_cost": "{1}{W}{W}",
+			"type": "Sorcery",
+			"collector_number": "5",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/5_Day 354 — Truth.png"
+			}
+		},
+		{
+			"name": "Water Core",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{U}",
+			"type": "Creature — Heartless Elemental Shade",
+			"collector_number": "105",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/105_Water Core.png"
+			}
+		},
+		{
+			"name": "A Very Merry Unbirthday",
+			"rarity": "uncommon",
+			"mana_cost": "{U}",
+			"type": "Instant",
+			"collector_number": "104",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/104_A Very Merry Unbirthday.png"
+			}
+		},
+		{
+			"name": "Reverse Rebirth",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{R}",
+			"type": "Sorcery",
+			"collector_number": "212",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/212_Reverse Rebirth.png"
+			}
+		},
+		{
+			"name": "Oblivion, Passing Memories",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{R}",
+			"type": "Legendary Artifact — Equipment Keyblade",
+			"collector_number": "209",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/209_Oblivion, Passing Memories.png"
+			}
+		},
+		{
+			"name": "Demon Tide",
+			"rarity": "uncommon",
+			"mana_cost": "{4}{G}",
+			"type": "Legendary Creature — Heartless Shade",
+			"collector_number": "241",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/241_Demon Tide.png"
+			}
+		},
+		{
+			"name": "Chaos Carriage",
+			"rarity": "uncommon",
+			"mana_cost": "{4}{G}",
+			"type": "Creature — Heartless Horse",
+			"collector_number": "232",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/232_Chaos Carriage.png"
+			}
+		},
+		{
+			"name": "Final Chapter Prologue",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{G}",
+			"type": "Sorcery",
+			"collector_number": "244",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/244_Final Chapter Prologue.png"
+			}
+		},
+		{
+			"name": "Twilight Town Mansion",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{G}",
+			"type": "Sorcery",
+			"collector_number": "274",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/274_Twilight Town Mansion.png"
+			}
+		},
+		{
+			"name": "Circle of Life",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{G}",
+			"type": "Legendary Artifact — Equipment Keyblade",
+			"collector_number": "235",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/235_Circle of Life.png"
+			}
+		},
+		{
+			"name": "Day 277 — Searching",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{G}",
+			"type": "Sorcery",
+			"collector_number": "239",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/239_Day 277 — Searching.png"
+			}
+		},
+		{
+			"name": "Day 224 — Anomaly",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{G}",
+			"type": "Sorcery",
+			"collector_number": "238",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/238_Day 224 — Anomaly.png"
+			}
+		},
+		{
+			"name": "Heartless Satyr",
+			"rarity": "uncommon",
+			"mana_cost": "{4}{G}",
+			"type": "Creature — Heartless Satyr",
+			"collector_number": "252",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/252_Heartless Satyr.png"
+			}
+		},
+		{
+			"name": "Decisive Pumpkin",
+			"rarity": "uncommon",
+			"mana_cost": "{3}{G}",
+			"type": "Legendary Artifact — Equipment Keyblade",
+			"collector_number": "240",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/240_Decisive Pumpkin.png"
+			}
+		},
+		{
+			"name": "Tama Sheep",
+			"rarity": "uncommon",
+			"mana_cost": "{W}{W}",
+			"type": "Enchantment Creature — Sheep Spirit",
+			"collector_number": "50",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/50_Tama Sheep.png"
+			}
+		},
+		{
+			"name": "Vulpes Wielder",
+			"rarity": "common",
+			"mana_cost": "{1}{G}",
+			"type": "Creature — Human Wielder",
+			"collector_number": "278",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/278_Vulpes Wielder.png"
+			}
+		},
+		{
+			"name": "Goofy, Royal Defender",
+			"rarity": "rare",
+			"mana_cost": "{2}{G}",
+			"type": "Legendary Creature — Dog Knight",
+			"collector_number": "247",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/247_Goofy, Royal Defender.png"
+			}
+		},
+		{
+			"name": "Rowdy Rumble",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{G}",
+			"type": "Instant",
+			"collector_number": "270",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/270_Rowdy Rumble.png"
+			}
+		},
+		{
+			"name": "Lion Form",
+			"rarity": "uncommon",
+			"mana_cost": "{G}{G}",
+			"type": "Enchantment — Aura",
+			"collector_number": "259",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/259_Lion Form.png"
+			}
+		},
+		{
+			"name": "Heartless Edict",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{B}",
+			"type": "Sorcery",
+			"collector_number": "128",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/128_Heartless Edict.png"
+			}
+		},
+		{
+			"name": "Toy Soldier",
+			"rarity": "uncommon",
+			"mana_cost": "{3}{B}",
+			"type": "Artifact Creature — Heartless Toy Soldier",
+			"collector_number": "160",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/160_Toy Soldier.png"
+			}
+		},
+		{
+			"name": "Parasol Beauty",
+			"rarity": "rare",
+			"mana_cost": "{2}{B}",
+			"type": "Creature — Heartless Citizen",
+			"collector_number": "153",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/153_Parasol Beauty.png"
+			}
+		},
+		{
+			"name": "Wight Knight",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{B}",
+			"type": "Creature — Heartless Zombie",
+			"collector_number": "166",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/166_Wight Knight.png"
+			}
+		},
+		{
+			"name": "Monochrome",
+			"rarity": "uncommon",
+			"mana_cost": "{3}{B}",
+			"type": "Legendary Artifact — Equipment Keyblade",
+			"collector_number": "143",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/143_Monochrome.png"
+			}
+		},
+		{
+			"name": "Guardian Soul",
+			"rarity": "uncommon",
+			"mana_cost": "{3}{B}",
+			"type": "Legendary Artifact — Equipment Keyblade",
+			"collector_number": "125",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/125_Guardian Soul.png"
+			}
+		},
+		{
+			"name": "Fatal Crest",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{R}",
+			"type": "Legendary Artifact — Equipment Keyblade",
+			"collector_number": "186",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/186_Fatal Crest.png"
+			}
+		},
+		{
+			"name": "Kingdom Key D",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{B}{B}",
+			"type": "Legendary Artifact — Equipment Keyblade",
+			"collector_number": "135",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/135_Kingdom Key D.png"
+			}
+		},
+		{
+			"name": "Nobody Ninja",
+			"rarity": "uncommon",
+			"mana_cost": "{3}{B}",
+			"type": "Creature — Nobody Ninja",
+			"collector_number": "148",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/148_Nobody Ninja.png"
+			}
+		},
+		{
+			"name": "Dismiss of Darkness",
+			"rarity": "uncommon",
+			"mana_cost": "{B}",
+			"type": "Instant",
+			"collector_number": "122",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/122_Dismiss of Darkness.png"
+			}
+		},
+		{
+			"name": "Dive to Heart",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{B}",
+			"type": "Sorcery",
+			"collector_number": "123",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/123_Dive to Heart.png"
+			}
+		},
+		{
+			"name": "Heartless Defender",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{G}",
+			"type": "Creature — Heartless Knight",
+			"collector_number": "250",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/250_Heartless Defender.png"
+			}
+		},
+		{
+			"name": "Heartless Neoshadow",
+			"rarity": "common",
+			"mana_cost": "{3}{B}",
+			"type": "Creature — Heartless Shade",
+			"collector_number": "130",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/130_Heartless Neoshadow.png"
+			}
+		},
+		{
+			"name": "The Twilight Road to Dawn",
+			"rarity": "uncommon",
+			"mana_cost": "{W}{B}",
+			"type": "Enchantment",
+			"collector_number": "299",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/299_The Twilight Road to Dawn.png"
+			}
+		},
+		{
+			"name": "Way to the Dawn",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{B}",
+			"type": "Legendary Artifact — Equipment Keyblade",
+			"collector_number": "165",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/165_Way to the Dawn.png"
+			}
+		},
+		{
+			"name": "Machine At The End Of The World",
+			"rarity": "rare",
+			"mana_cost": "{1}{B}",
+			"type": "Enchantment",
+			"collector_number": "139",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/139_Machine At The End Of The World.png"
+			}
+		},
+		{
+			"name": "Roxas, Key of Destiny",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{R}{W}",
+			"type": "Legendary Creature — Nobody Wielder",
+			"collector_number": "308",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/308_Roxas, Key of Destiny.png"
+			}
+		},
+		{
+			"name": "Promise Charm",
+			"rarity": "rare",
+			"mana_cost": "{2}{W}",
+			"type": "Sorcery",
+			"collector_number": "34",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/34_Promise Charm.png"
+			}
+		},
+		{
+			"name": "Vanitas, Heart of Darkness",
+			"rarity": "rare",
+			"mana_cost": "{5}{B}",
+			"type": "Legendary Creature — Unversed Wielder",
+			"collector_number": "164",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/164_Vanitas, Heart of Darkness.png"
+			}
+		},
+		{
+			"name": "Post Mission Debrief",
+			"rarity": "uncommon",
+			"mana_cost": "{R}{G}",
+			"type": "Enchantment",
+			"collector_number": "292",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/292_Post Mission Debrief.png"
+			}
+		},
+		{
+			"name": "Riku, Seeker of Worlds",
+			"rarity": "uncommon",
+			"mana_cost": "{R}{W}",
+			"type": "Legendary Creature — Human Wielder",
+			"collector_number": "307",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/307_Riku, Seeker of Worlds.png"
+			}
+		},
+		{
+			"name": "Master Xehanort",
+			"rarity": "rare",
+			"mana_cost": "{6}{B}",
+			"type": "Legendary Creature — Human Wielder",
+			"collector_number": "142",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/142_Master Xehanort.png"
+			}
+		},
+		{
+			"name": "Lingering Will",
+			"rarity": "mythic",
+			"mana_cost": "{7}",
+			"type": "Legendary Creature — Spirit Wielder",
+			"collector_number": "1",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/1_Lingering Will.png"
+			}
+		},
+		{
+			"name": "Destiny Islands",
+			"rarity": "rare",
+			"mana_cost": "",
+			"type": "Legendary Land — Island",
+			"collector_number": "338",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/338_Destiny Islands.png"
+			}
+		},
+		{
+			"name": "Xion, Organization's Puppet",
+			"rarity": "rare",
+			"mana_cost": "{X}{B}",
+			"type": "Legendary Creature — Replica Wielder",
+			"collector_number": "167",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/167_Xion, Organization's Puppet.png"
+			}
+		},
+		{
+			"name": "Naminé, Memory Distorter",
+			"rarity": "common",
+			"mana_cost": "{1}{R}",
+			"type": "Legendary Creature — Nobody Wizard",
+			"collector_number": "202",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/202_Naminé, Memory Distorter.png"
+			}
+		},
+		{
+			"name": "Paopu Fruit Promise",
+			"rarity": "uncommon",
+			"mana_cost": "{4}{G}",
+			"type": "Sorcery",
+			"collector_number": "261",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/261_Paopu Fruit Promise.png"
+			}
+		},
+		{
+			"name": "Demyx. Melodious Nocturne",
+			"rarity": "rare",
+			"mana_cost": "{1}{R}{R}",
+			"type": "Legendary Creature — Nobody Performer",
+			"collector_number": "181",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/181_Demyx. Melodious Nocturne.png"
+			}
+		},
+		{
+			"name": "Xemnas, Superior of the In-Between",
+			"rarity": "rare",
+			"mana_cost": "{3}{B}{R}",
+			"type": "Legendary Creature — Nobody Wizard",
+			"collector_number": "290",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/290_Xemnas, Superior of the In-Between.png"
+			}
+		},
+		{
+			"name": "Ansem, Seeker of Darkness",
+			"rarity": "uncommon",
+			"mana_cost": "{6}{U}{B}",
+			"type": "Legendary Creature — Heartless Human",
+			"collector_number": "283",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/283_Ansem, Seeker of Darkness.png"
+			}
+		},
+		{
+			"name": "Arabian Dream",
+			"rarity": "common",
+			"mana_cost": "{1}{R}",
+			"type": "Instant",
+			"collector_number": "169",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/169_Arabian Dream.png"
+			}
+		},
+		{
+			"name": "Unknown",
+			"rarity": "rare",
+			"mana_cost": "{1}{B}",
+			"type": "Creature — Human Wizard",
+			"collector_number": "162",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/162_Unknown.png"
+			}
+		},
+		{
+			"name": "The Other Promise",
+			"rarity": "rare",
+			"mana_cost": "{B}{B}",
+			"type": "Sorcery",
+			"collector_number": "152",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/152_The Other Promise.png"
+			}
+		},
+		{
+			"name": "Two Become One",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{W}{B}",
+			"type": "Legendary Artifact — Equipment Keyblade",
+			"collector_number": "300",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/300_Two Become One.png"
+			}
+		},
+		{
+			"name": "Summon Tinker Bell",
+			"rarity": "rare",
+			"mana_cost": "{2}{W}",
+			"type": "Enchantment Creature — Saga Faerie",
+			"collector_number": "48",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/48_Summon Tinker Bell.png"
+			}
+		},
+		{
+			"name": "Summon Genie",
+			"rarity": "uncommon",
+			"mana_cost": "{4}{U}",
+			"type": "Enchantment Creature — Saga Djinn",
+			"collector_number": "98",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/98_Summon Genie.png"
+			}
+		},
+		{
+			"name": "Summon Bambi",
+			"rarity": "uncommon",
+			"mana_cost": "{W}{U}",
+			"type": "Enchantment Creature — Saga Elk",
+			"collector_number": "282",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/282_Summon Bambi.png"
+			}
+		},
+		{
+			"name": "Summon Chicken Little",
+			"rarity": "common",
+			"mana_cost": "{2}{W}",
+			"type": "Enchantment Creature — Saga Bird",
+			"collector_number": "45",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/45_Summon Chicken Little.png"
+			}
+		},
+		{
+			"name": "Heartbinder",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{W}",
+			"type": "Sorcery",
+			"collector_number": "11",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/11_Heartbinder.png"
+			}
+		},
+		{
+			"name": "Twilight Thorn",
+			"rarity": "uncommon",
+			"mana_cost": "{8}{B}{R}",
+			"type": "Legendary Creature — Nobody Giant",
+			"collector_number": "288",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/288_Twilight Thorn.png"
+			}
+		},
+		{
+			"name": "End of the World",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{B}{R}",
+			"type": "Enchantment",
+			"collector_number": "286",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/286_End of the World.png"
+			}
+		},
+		{
+			"name": "Glimmering Garments",
+			"rarity": "rare",
+			"mana_cost": "{1}{W}{U}",
+			"type": "Enchantment",
+			"collector_number": "281",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/281_Glimmering Garments.png"
+			}
+		},
+		{
+			"name": "Ephemer, Light of the Past",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{U}{R}",
+			"type": "Legendary Creature — Human Wielder",
+			"collector_number": "301",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/301_Ephemer, Light of the Past.png"
+			}
+		},
+		{
+			"name": "Skuld, Hopeful Dandelion",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{U}{R}",
+			"type": "Legendary Creature — Human Wielder",
+			"collector_number": "302",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/302_Skuld, Hopeful Dandelion.png"
+			}
+		},
+		{
+			"name": "Strelitzia, the Missing Sister",
+			"rarity": "uncommon",
+			"mana_cost": "{U}{R}",
+			"type": "Legendary Creature — Human Wielder",
+			"collector_number": "303",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/303_Strelitzia, the Missing Sister.png"
+			}
+		},
+		{
+			"name": "Heartless Manufactory",
+			"rarity": "uncommon",
+			"mana_cost": "{4}{W}{B}",
+			"type": "Enchantment",
+			"collector_number": "297",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/297_Heartless Manufactory.png"
+			}
+		},
+		{
+			"name": "Heartless Angel",
+			"rarity": "uncommon",
+			"mana_cost": "",
+			"type": "Token Creature — Heartless Angel",
+			"collector_number": "6",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/6_Heartless Angel.png"
+			}
+		},
+		{
+			"name": "Heartless Demon",
+			"rarity": "uncommon",
+			"mana_cost": "",
+			"type": "Token Creature — Heartless Demon",
+			"collector_number": "7",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/7_Heartless Demon.png"
+			}
+		},
+		{
+			"name": "Heartless Soldier",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Token Creature — Heartless Soldier",
+			"collector_number": "8",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/8_Heartless Soldier.png"
+			}
+		},
+		{
+			"name": "The World That Never Was",
+			"rarity": "rare",
+			"mana_cost": "",
+			"type": "Legendary Artifact Land",
+			"collector_number": "333",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/333_The World That Never Was.png"
+			}
+		},
+		{
+			"name": "Talisman of Resilience",
+			"rarity": "uncommon",
+			"mana_cost": "{2}",
+			"type": "Artifact",
+			"collector_number": "330",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/330_Talisman of Resilience.png"
+			}
+		},
+		{
+			"name": "Talisman of Creativity",
+			"rarity": "uncommon",
+			"mana_cost": "{2}",
+			"type": "Artifact",
+			"collector_number": "323",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/323_Talisman of Creativity.png"
+			}
+		},
+		{
+			"name": "Talisman of Dominance",
+			"rarity": "uncommon",
+			"mana_cost": "{2}",
+			"type": "Artifact",
+			"collector_number": "325",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/325_Talisman of Dominance.png"
+			}
+		},
+		{
+			"name": "Talisman of Curiosity",
+			"rarity": "uncommon",
+			"mana_cost": "{2}",
+			"type": "Artifact",
+			"collector_number": "324",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/324_Talisman of Curiosity.png"
+			}
+		},
+		{
+			"name": "Talisman of Hierarchy",
+			"rarity": "uncommon",
+			"mana_cost": "{2}",
+			"type": "Artifact",
+			"collector_number": "326",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/326_Talisman of Hierarchy.png"
+			}
+		},
+		{
+			"name": "Talisman of Progress",
+			"rarity": "uncommon",
+			"mana_cost": "{2}",
+			"type": "Artifact",
+			"collector_number": "329",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/329_Talisman of Progress.png"
+			}
+		},
+		{
+			"name": "Talisman of Conviction",
+			"rarity": "uncommon",
+			"mana_cost": "{2}",
+			"type": "Artifact",
+			"collector_number": "322",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/322_Talisman of Conviction.png"
+			}
+		},
+		{
+			"name": "Talisman of Indulgence",
+			"rarity": "uncommon",
+			"mana_cost": "{2}",
+			"type": "Artifact",
+			"collector_number": "328",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/328_Talisman of Indulgence.png"
+			}
+		},
+		{
+			"name": "Talisman of Impulse",
+			"rarity": "uncommon",
+			"mana_cost": "{2}",
+			"type": "Artifact",
+			"collector_number": "327",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/327_Talisman of Impulse.png"
+			}
+		},
+		{
+			"name": "Talisman of Unity",
+			"rarity": "uncommon",
+			"mana_cost": "{2}",
+			"type": "Artifact",
+			"collector_number": "331",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/331_Talisman of Unity.png"
+			}
+		},
+		{
+			"name": "Dream Drop Distance",
+			"rarity": "uncommon",
+			"mana_cost": "{W}{U}",
+			"type": "Enchantment",
+			"collector_number": "280",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/280_Dream Drop Distance.png"
+			}
+		},
+		{
+			"name": "Dual Wield",
+			"rarity": "uncommon",
+			"mana_cost": "{R}{G}",
+			"type": "Instant",
+			"collector_number": "291",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/291_Dual Wield.png"
+			}
+		},
+		{
+			"name": "Darkness of the Unknown",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{R}{R}",
+			"type": "Sorcery",
+			"collector_number": "178",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/178_Darkness of the Unknown.png"
+			}
+		},
+		{
+			"name": "Replica's Sacrifice",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{R}{G}",
+			"type": "Instant",
+			"collector_number": "293",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/293_Replica's Sacrifice.png"
+			}
+		},
+		{
+			"name": "Control of Darkness",
+			"rarity": "rare",
+			"mana_cost": "{3}{U}{U}",
+			"type": "Enchantment — Aura",
+			"collector_number": "68",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/68_Control of Darkness.png"
+			}
+		},
+		{
+			"name": "R & R Seal",
+			"rarity": "common",
+			"mana_cost": "{U}",
+			"type": "Enchantment Creature — Seal Spirit",
+			"collector_number": "86",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/86_R & R Seal.png"
+			}
+		},
+		{
+			"name": "Pricklemane",
+			"rarity": "common",
+			"mana_cost": "{W}",
+			"type": "Enchantment Creature — Cat Spirit",
+			"collector_number": "33",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/33_Pricklemane.png"
+			}
+		},
+		{
+			"name": "Defending Hollow Bastion",
+			"rarity": "common",
+			"mana_cost": "{5}{R}",
+			"type": "Instant",
+			"collector_number": "180",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/180_Defending Hollow Bastion.png"
+			}
+		},
+		{
+			"name": "Wishing Lamp",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{R}",
+			"type": "Legendary Artifact — Equipment Keyblade",
+			"collector_number": "221",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/221_Wishing Lamp.png"
+			}
+		},
+		{
+			"name": "Wielder",
+			"rarity": "uncommon",
+			"mana_cost": "",
+			"type": "Token Creature — Wielder",
+			"collector_number": "2",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/2_Wielder.png"
+			}
+		},
+		{
+			"name": "Wielder",
+			"rarity": "uncommon",
+			"mana_cost": "",
+			"type": "Token Creature — Wielder",
+			"collector_number": "3",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/3_Wielder.png"
+			}
+		},
+		{
+			"name": "Wielder",
+			"rarity": "uncommon",
+			"mana_cost": "",
+			"type": "Token Creature — Wielder",
+			"collector_number": "4",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/4_Wielder.png"
+			}
+		},
+		{
+			"name": "Wielder",
+			"rarity": "uncommon",
+			"mana_cost": "",
+			"type": "Token Creature — Wielder",
+			"collector_number": "5",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/5_Wielder.png"
+			}
+		},
+		{
+			"name": "Gull Wing",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{W}",
+			"type": "Legendary Artifact — Equipment Keyblade",
+			"collector_number": "9",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/9_Gull Wing.png"
+			}
+		},
+		{
+			"name": "Cornerstone of Light",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{G}{W}",
+			"type": "Legendary Artifact",
+			"collector_number": "295",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/295_Cornerstone of Light.png"
+			}
+		},
+		{
+			"name": "The Gummi Ship",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{G}{U}",
+			"type": "Legendary Artifact — Vehicle",
+			"collector_number": "312",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/312_The Gummi Ship.png"
+			}
+		},
+		{
+			"name": "Leechgrave",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{U}{B}",
+			"type": "Legendary Creature — Heartless Horror",
+			"collector_number": "285",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/285_Leechgrave.png"
+			}
+		},
+		{
+			"name": "Twilight Blaze",
+			"rarity": "uncommon",
+			"mana_cost": "{R}{W}",
+			"type": "Legendary Artifact — Equipment Keyblade",
+			"collector_number": "309",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/309_Twilight Blaze.png"
+			}
+		},
+		{
+			"name": "Face my Fears",
+			"rarity": "uncommon",
+			"mana_cost": "{G}{U}",
+			"type": "Enchantment",
+			"collector_number": "311",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/311_Face my Fears.png"
+			}
+		},
+		{
+			"name": "Heartless Pirate",
+			"rarity": "common",
+			"mana_cost": "{2}{B}",
+			"type": "Creature — Heartless Pirate",
+			"collector_number": "131",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/131_Heartless Pirate.png"
+			}
+		},
+		{
+			"name": "Unicornis Wielder",
+			"rarity": "common",
+			"mana_cost": "{1}{B}",
+			"type": "Creature — Human Wielder",
+			"collector_number": "161",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/161_Unicornis Wielder.png"
+			}
+		},
+		{
+			"name": "Elemental Performer",
+			"rarity": "rare",
+			"mana_cost": "",
+			"type": "Token Creature — Elemental Performer",
+			"collector_number": "1",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/1_Elemental Performer.png"
+			}
+		},
+		{
+			"name": "Chip and Dale, Gummi Mechanics",
+			"rarity": "uncommon",
+			"mana_cost": "{G}{W}",
+			"type": "Legendary Creature — Squirrel Artificer",
+			"collector_number": "294",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/294_Chip and Dale, Gummi Mechanics.png"
+			}
+		},
+		{
+			"name": "Darkside",
+			"rarity": "uncommon",
+			"mana_cost": "{3}{B}{G}",
+			"type": "Creature — Heartless Giant Shade",
+			"collector_number": "304",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/304_Darkside.png"
+			}
+		},
+		{
+			"name": "Salvaged From Darkness",
+			"rarity": "uncommon",
+			"mana_cost": "{3}{B}{G}",
+			"type": "Sorcery",
+			"collector_number": "306",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/306_Salvaged From Darkness.png"
+			}
+		},
+		{
+			"name": "Replica Program",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{B}{G}",
+			"type": "Enchantment",
+			"collector_number": "305",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/305_Replica Program.png"
+			}
+		},
+		{
+			"name": "Light of Destruction",
+			"rarity": "uncommon",
+			"mana_cost": "{G}{G}{W}{W}",
+			"type": "Sorcery",
+			"collector_number": "296",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/296_Light of Destruction.png"
+			}
+		},
+		{
+			"name": "Zexion, The Cloaked Schemer",
+			"rarity": "rare",
+			"mana_cost": "{W}{U}{B}",
+			"type": "Legendary Creature — Nobody Wizard",
+			"collector_number": "318",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/318_Zexion, The Cloaked Schemer.png"
+			}
+		},
+		{
+			"name": "Lexaeus, The Taciturn Stalwart",
+			"rarity": "rare",
+			"mana_cost": "{4}{R}",
+			"type": "Legendary Creature — Nobody Warrior",
+			"collector_number": "198",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/198_Lexaeus, The Taciturn Stalwart.png"
+			}
+		},
+		{
+			"name": "Larxene, The Savage Ninja",
+			"rarity": "rare",
+			"mana_cost": "{B}{B}",
+			"type": "Legendary Creature — Nobody Ninja",
+			"collector_number": "137",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/137_Larxene, The Savage Ninja.png"
+			}
+		},
+		{
+			"name": "Stealth Sneak",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{G}{U}",
+			"type": "Creature — Heartless Lizard",
+			"collector_number": "313",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/313_Stealth Sneak.png"
+			}
+		},
+		{
+			"name": "Ultima Weapon Keyblade",
+			"rarity": "rare",
+			"mana_cost": "{5}{W}{W}",
+			"type": "Legendary Artifact — Equipment Keyblade",
+			"collector_number": "52",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/52_Ultima Weapon Keyblade.png"
+			}
+		},
+		{
+			"name": "Photon Debugger",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{W}",
+			"type": "Legendary Artifact — Equipment Keyblade",
+			"collector_number": "32",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/32_Photon Debugger.png"
+			}
+		},
+		{
+			"name": "Zettaflare",
+			"rarity": "mythic",
+			"mana_cost": "{4}{R}",
+			"type": "Legendary Sorcery",
+			"collector_number": "224",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/224_Zettaflare.png"
+			}
+		},
+		{
+			"name": "Terra-Xehanort, Vessel of Darkness",
+			"rarity": "rare",
+			"mana_cost": "{4}{U}{U}",
+			"type": "Legendary Creature — Heartless Human Wielder",
+			"collector_number": "101",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/101_Terra-Xehanort, Vessel of Darkness.png"
+			}
+		},
+		{
+			"name": "Powerwild",
+			"rarity": "common",
+			"mana_cost": "{1}{G}",
+			"type": "Creature — Heartless Ape Warrior",
+			"collector_number": "266",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/266_Powerwild.png"
+			}
+		},
+		{
+			"name": "Search Ghost",
+			"rarity": "common",
+			"mana_cost": "{2}{U}",
+			"type": "Creature — Heartless Spirit",
+			"collector_number": "89",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/89_Search Ghost.png"
+			}
+		},
+		{
+			"name": "Anguis Wielder",
+			"rarity": "common",
+			"mana_cost": "{1}{U}",
+			"type": "Creature — Human Wielder",
+			"collector_number": "56",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/56_Anguis Wielder.png"
+			}
+		},
+		{
+			"name": "Leopardos Wielder",
+			"rarity": "common",
+			"mana_cost": "{1}{W}",
+			"type": "Creature — Human Wielder",
+			"collector_number": "23",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/23_Leopardos Wielder.png"
+			}
+		},
+		{
+			"name": "Crown of Guilt",
+			"rarity": "common",
+			"mana_cost": "{1}{R}",
+			"type": "Legendary Artifact — Equipment Keyblade",
+			"collector_number": "177",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/177_Crown of Guilt.png"
+			}
+		},
+		{
+			"name": "Popcat",
+			"rarity": "common",
+			"mana_cost": "{G}",
+			"type": "Creature — Heartless Cat",
+			"collector_number": "264",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/264_Popcat.png"
+			}
+		},
+		{
+			"name": "Ominous Blight",
+			"rarity": "uncommon",
+			"mana_cost": "{3}{B}",
+			"type": "Legendary Artifact — Equipment Keyblade",
+			"collector_number": "151",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/151_Ominous Blight.png"
+			}
+		},
+		{
+			"name": "Chief Puff",
+			"rarity": "common",
+			"mana_cost": "{5}{G}",
+			"type": "Creature — Heartless Plant Soldier",
+			"collector_number": "233",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/233_Chief Puff.png"
+			}
+		},
+		{
+			"name": "The Black Box of Prophecy",
+			"rarity": "mythic",
+			"mana_cost": "{B}{B}{B}",
+			"type": "Legendary Artifact",
+			"collector_number": "114",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/114_The Black Box of Prophecy.png"
+			}
+		},
+		{
+			"name": "The Master of Masters",
+			"rarity": "mythic",
+			"mana_cost": "{X}{R}{W}{B}",
+			"type": "Legendary Creature — Elder Wielder",
+			"collector_number": "315",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/315_The Master of Masters.png"
+			}
+		},
+		{
+			"name": "Master Eraqus",
+			"rarity": "mythic",
+			"mana_cost": "{1}{G}{W}{U}",
+			"type": "Legendary Creature — Human Wielder",
+			"collector_number": "314",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/314_Master Eraqus.png"
+			}
+		},
+		{
+			"name": "Kairi, Searching for Light",
+			"rarity": "rare",
+			"mana_cost": "{W}{W}",
+			"type": "Legendary Creature — Human Noble Wielder",
+			"collector_number": "17",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/17_Kairi, Searching for Light.png"
+			}
+		},
+		{
+			"name": "Kairi, Fighting the Darkness",
+			"rarity": "mythic",
+			"mana_cost": "{1}{W}{W}",
+			"type": "Legendary Creature — Human Wielder",
+			"collector_number": "15",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/15_Kairi, Fighting the Darkness.png"
+			}
+		},
+		{
+			"name": "Riku, Keyblade Master",
+			"rarity": "mythic",
+			"mana_cost": "{1}{R}{W}{B}",
+			"type": "Legendary Creature — Human Wielder",
+			"collector_number": "316",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/316_Riku, Keyblade Master.png"
+			}
+		},
+		{
+			"name": "Riku, Battling Inner Darkness",
+			"rarity": "rare",
+			"mana_cost": "{1}{W}{B}",
+			"type": "Legendary Creature — Human Wielder",
+			"collector_number": "298",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/298_Riku, Battling Inner Darkness.png"
+			}
+		},
+		{
+			"name": "Crescendo",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{U}{B}",
+			"type": "Artifact Creature — Heartless Robot",
+			"collector_number": "284",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/284_Crescendo.png"
+			}
+		},
+		{
+			"name": "Daybreak Town",
+			"rarity": "rare",
+			"mana_cost": "",
+			"type": "Legendary Land — Town",
+			"collector_number": "337",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/337_Daybreak Town.png"
+			}
+		},
+		{
+			"name": "Keyhole of Hollow Bastion",
+			"rarity": "rare",
+			"mana_cost": "{4}{B}",
+			"type": "Legendary Artifact — Keyhole",
+			"collector_number": "134",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/134_Keyhole of Hollow Bastion.png"
+			}
+		},
+		{
+			"name": "Keyhole of Destiny Islands",
+			"rarity": "rare",
+			"mana_cost": "{4}{G}",
+			"type": "Legendary Artifact — Keyhole",
+			"collector_number": "255",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/255_Keyhole of Destiny Islands.png"
+			}
+		},
+		{
+			"name": "Keyhole of Traverse Town",
+			"rarity": "rare",
+			"mana_cost": "{4}{R}",
+			"type": "Legendary Artifact — Keyhole",
+			"collector_number": "195",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/195_Keyhole of Traverse Town.png"
+			}
+		},
+		{
+			"name": "Keyhole of Castle Oblivion",
+			"rarity": "rare",
+			"mana_cost": "{4}{W}",
+			"type": "Legendary Artifact — Keyhole",
+			"collector_number": "19",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/19_Keyhole of Castle Oblivion.png"
+			}
+		},
+		{
+			"name": "Keyhole of The Land of Departure",
+			"rarity": "rare",
+			"mana_cost": "{4}{U}",
+			"type": "Legendary Artifact — Keyhole",
+			"collector_number": "83",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/83_Keyhole of The Land of Departure.png"
+			}
+		},
+		{
+			"name": "Nobody Assassin",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{R}",
+			"type": "Creature — Nobody Assassin",
+			"collector_number": "203",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/203_Nobody Assassin.png"
+			}
+		},
+		{
+			"name": "Flame Core",
+			"rarity": "common",
+			"mana_cost": "{1}{R}",
+			"type": "Creature — Heartless Elemental",
+			"collector_number": "189",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/189_Flame Core.png"
+			}
+		},
+		{
+			"name": "Heartless Lich",
+			"rarity": "mythic",
+			"mana_cost": "{2}{B}{B}",
+			"type": "Legendary Creature — Heartless Wizard",
+			"collector_number": "129",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/129_Heartless Lich.png"
+			}
+		},
+		{
+			"name": "Bouncywild",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{G}",
+			"type": "Creature — Heartless Ape",
+			"collector_number": "230",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/230_Bouncywild.png"
+			}
+		},
+		{
+			"name": "Pot Scorpion",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{G}",
+			"type": "Creature — Heartless Scorpion",
+			"collector_number": "265",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/265_Pot Scorpion.png"
+			}
+		},
+		{
+			"name": "Creeper Plant",
+			"rarity": "uncommon",
+			"mana_cost": "{G}{G}",
+			"type": "Creature — Heartless Plant",
+			"collector_number": "237",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/237_Creeper Plant.png"
+			}
+		},
+		{
+			"name": "Hook Bat",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{U}",
+			"type": "Creature — Heartless Bat",
+			"collector_number": "77",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/77_Hook Bat.png"
+			}
+		},
+		{
+			"name": "Birth By Sleep",
+			"rarity": "rare",
+			"mana_cost": "{1}{G}",
+			"type": "Sorcery",
+			"collector_number": "227",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/227_Birth By Sleep.png"
+			}
+		},
+		{
+			"name": "Beast's Castle",
+			"rarity": "uncommon",
+			"mana_cost": "",
+			"type": "Legendary Land — Town",
+			"collector_number": "336",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/336_Beast's Castle.png"
+			}
+		},
+		{
+			"name": "Agrabah",
+			"rarity": "uncommon",
+			"mana_cost": "",
+			"type": "Legendary Land — Town",
+			"collector_number": "334",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/334_Agrabah.png"
+			}
+		},
+		{
+			"name": "Pride Lands",
+			"rarity": "uncommon",
+			"mana_cost": "",
+			"type": "Legendary Land — Town",
+			"collector_number": "346",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/346_Pride Lands.png"
+			}
+		},
+		{
+			"name": "Atlantica",
+			"rarity": "uncommon",
+			"mana_cost": "",
+			"type": "Legendary Land — Town",
+			"collector_number": "335",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/335_Atlantica.png"
+			}
+		},
+		{
+			"name": "Port Royal",
+			"rarity": "uncommon",
+			"mana_cost": "",
+			"type": "Legendary Land — Town",
+			"collector_number": "345",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/345_Port Royal.png"
+			}
+		},
+		{
+			"name": "Timeless River",
+			"rarity": "uncommon",
+			"mana_cost": "",
+			"type": "Legendary Land — Town",
+			"collector_number": "349",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/349_Timeless River.png"
+			}
+		},
+		{
+			"name": "Halloween Town",
+			"rarity": "uncommon",
+			"mana_cost": "",
+			"type": "Legendary Land — Town",
+			"collector_number": "340",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/340_Halloween Town.png"
+			}
+		},
+		{
+			"name": "Land of Dragons",
+			"rarity": "uncommon",
+			"mana_cost": "",
+			"type": "Legendary Land — Town",
+			"collector_number": "343",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/343_Land of Dragons.png"
+			}
+		},
+		{
+			"name": "Olympus Coliseum",
+			"rarity": "uncommon",
+			"mana_cost": "",
+			"type": "Legendary Land — Town",
+			"collector_number": "344",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/344_Olympus Coliseum.png"
+			}
+		},
+		{
+			"name": "Space Paranoids",
+			"rarity": "uncommon",
+			"mana_cost": "",
+			"type": "Legendary Land — Town",
+			"collector_number": "348",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/348_Space Paranoids.png"
+			}
+		},
+		{
+			"name": "Station of Sanctuary",
+			"rarity": "rare",
+			"mana_cost": "{1}{U}{U}",
+			"type": "Sorcery",
+			"collector_number": "94",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/94_Station of Sanctuary.png"
+			}
+		},
+		{
+			"name": "Under The Sea",
+			"rarity": "rare",
+			"mana_cost": "{1}{U}",
+			"type": "Sorcery",
+			"collector_number": "103",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/103_Under The Sea.png"
+			}
+		},
+		{
+			"name": "Closing The Door to Darkness",
+			"rarity": "rare",
+			"mana_cost": "{2}{B}",
+			"type": "Instant",
+			"collector_number": "119",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/119_Closing The Door to Darkness.png"
+			}
+		},
+		{
+			"name": "Pink Agaricus",
+			"rarity": "common",
+			"mana_cost": "{G}",
+			"type": "Creature — Heartless Fungus",
+			"collector_number": "262",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/262_Pink Agaricus.png"
+			}
+		},
+		{
+			"name": "Assault Rider",
+			"rarity": "common",
+			"mana_cost": "{5}{G}",
+			"type": "Creature — Heartless Centaur",
+			"collector_number": "226",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/226_Assault Rider.png"
+			}
+		},
+		{
+			"name": "Bizzare Archer",
+			"rarity": "common",
+			"mana_cost": "{1}{G}",
+			"type": "Creature — Heartless Archer",
+			"collector_number": "228",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/228_Bizzare Archer.png"
+			}
+		},
+		{
+			"name": "Lance Soldier",
+			"rarity": "common",
+			"mana_cost": "{1}{G}",
+			"type": "Creature — Heartless Soldier",
+			"collector_number": "257",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/257_Lance Soldier.png"
+			}
+		},
+		{
+			"name": "Unversed Flood",
+			"rarity": "common",
+			"mana_cost": "{1}{G}",
+			"type": "Creature — Unversed Shade",
+			"collector_number": "275",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/275_Unversed Flood.png"
+			}
+		},
+		{
+			"name": "Unversed Bruiser",
+			"rarity": "uncommon",
+			"mana_cost": "{3}{B}",
+			"type": "Creature — Unversed Warrior",
+			"collector_number": "163",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/163_Unversed Bruiser.png"
+			}
+		},
+		{
+			"name": "Unversed Scrapper",
+			"rarity": "common",
+			"mana_cost": "{G}",
+			"type": "Creature — Unversed Soldier",
+			"collector_number": "277",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/277_Unversed Scrapper.png"
+			}
+		},
+		{
+			"name": "Blobmob",
+			"rarity": "rare",
+			"mana_cost": "{4}{U}{U}",
+			"type": "Legendary Creature — Unversed Jellyfish",
+			"collector_number": "62",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/62_Blobmob.png"
+			}
+		},
+		{
+			"name": "Grim Guardianess",
+			"rarity": "mythic",
+			"mana_cost": "{5}{G}{G}",
+			"type": "Legendary Creature — Heartless Treefolk",
+			"collector_number": "248",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/248_Grim Guardianess.png"
+			}
+		},
+		{
+			"name": "Summon Wreck-It Ralph",
+			"rarity": "rare",
+			"mana_cost": "{5}{W}",
+			"type": "Enchantment Creature — Saga Human",
+			"collector_number": "49",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/49_Summon Wreck-It Ralph.png"
+			}
+		},
+		{
+			"name": "Isa, Cold as Night",
+			"rarity": "rare",
+			"mana_cost": "{2}{U}{U}",
+			"type": "Creature — Human Wizard",
+			"collector_number": "81",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/81_Isa, Cold as Night.png"
+			}
+		},
+		{
+			"name": "Lea, Burning Memory",
+			"rarity": "rare",
+			"mana_cost": "{1}{R}",
+			"type": "Creature — Human Shaman",
+			"collector_number": "197",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/197_Lea, Burning Memory.png"
+			}
+		},
+		{
+			"name": "Apprentice Even",
+			"rarity": "rare",
+			"mana_cost": "{1}{U}",
+			"type": "Creature — Human Wizard",
+			"collector_number": "58",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/58_Apprentice Even.png"
+			}
+		},
+		{
+			"name": "Dilan, Knight of Ansem",
+			"rarity": "mythic",
+			"mana_cost": "{1}{R}",
+			"type": "Legendary Creature — Human Knight",
+			"collector_number": "182",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/182_Dilan, Knight of Ansem.png"
+			}
+		},
+		{
+			"name": "Ienzo, Apprentice of Ansem",
+			"rarity": "rare",
+			"mana_cost": "{1}{W}",
+			"type": "Creature — Human Wizard",
+			"collector_number": "14",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/14_Ienzo, Apprentice of Ansem.png"
+			}
+		},
+		{
+			"name": "Burn Baby!",
+			"rarity": "rare",
+			"mana_cost": "{R}",
+			"type": "Sorcery",
+			"collector_number": "174",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/174_Burn Baby!.png"
+			}
+		},
+		{
+			"name": "Birth of a Nobody",
+			"rarity": "rare",
+			"mana_cost": "{3}{R}{R}",
+			"type": "Enchantment — Aura",
+			"collector_number": "172",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/172_Birth of a Nobody.png"
+			}
+		},
+		{
+			"name": "Roaming Throne",
+			"rarity": "rare",
+			"mana_cost": "{4}",
+			"type": "Artifact Creature — Golem",
+			"collector_number": "320",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/320_Roaming Throne.png"
+			}
+		},
+		{
+			"name": "Aeleus, Warrior of Ansem",
+			"rarity": "rare",
+			"mana_cost": "{2}{R}",
+			"type": "Creature — Human Warrior",
+			"collector_number": "168",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/168_Aeleus, Warrior of Ansem.png"
+			}
+		},
+		{
+			"name": "Day 359 — The First Day",
+			"rarity": "common",
+			"mana_cost": "{1}{B}",
+			"type": "Sorcery",
+			"collector_number": "121",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/121_Day 359 — The First Day.png"
+			}
+		},
+		{
+			"name": "Combat Tutorial",
+			"rarity": "common",
+			"mana_cost": "{2}{U}",
+			"type": "Sorcery",
+			"collector_number": "66",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/66_Combat Tutorial.png"
+			}
+		},
+		{
+			"name": "Unchained Weilder",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{R}{W}",
+			"type": "Enchantment",
+			"collector_number": "310",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/310_Unchained Weilder.png"
+			}
+		},
+		{
+			"name": "Organization XIII",
+			"rarity": "rare",
+			"mana_cost": "{B}{R}",
+			"type": "Legendary Creature — Nobody",
+			"collector_number": "287",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/287_Organization XIII.png"
+			}
+		},
+		{
+			"name": "Orichalcum +",
+			"rarity": "common",
+			"mana_cost": "{3}",
+			"type": "Artifact",
+			"collector_number": "319",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/319_Orichalcum +.png"
+			}
+		},
+		{
+			"name": "World Map",
+			"rarity": "common",
+			"mana_cost": "{1}",
+			"type": "Artifact",
+			"collector_number": "332",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/332_World Map.png"
+			}
+		},
+		{
+			"name": "Reflega!",
+			"rarity": "rare",
+			"mana_cost": "{1}{W}",
+			"type": "Instant",
+			"collector_number": "36",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/36_Reflega!.png"
+			}
+		},
+		{
+			"name": "Shrouding Dark Cloud",
+			"rarity": "common",
+			"mana_cost": "{1}{B}",
+			"type": "Sorcery",
+			"collector_number": "157",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/157_Shrouding Dark Cloud.png"
+			}
+		},
+		{
+			"name": "Battle of the 1000 Heartless",
+			"rarity": "mythic",
+			"mana_cost": "{7}{B}{B}",
+			"type": "Sorcery",
+			"collector_number": "113",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/113_Battle of the 1000 Heartless.png"
+			}
+		},
+		{
+			"name": "Braig, Tracking Destiny",
+			"rarity": "rare",
+			"mana_cost": "{2}{G}",
+			"type": "Creature — Human Scout",
+			"collector_number": "231",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/231_Braig, Tracking Destiny.png"
+			}
+		},
+		{
+			"name": "Fragments of Sorrow",
+			"rarity": "rare",
+			"mana_cost": "{1}{B}",
+			"type": "Sorcery",
+			"collector_number": "124",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/124_Fragments of Sorrow.png"
+			}
+		},
+		{
+			"name": "Chernabog",
+			"rarity": "mythic",
+			"mana_cost": "{4}{B}{B}{B}{B}",
+			"type": "Legendary Creature — Demon",
+			"collector_number": "118",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/118_Chernabog.png"
+			}
+		},
+		{
+			"name": "Cloud's Limit Break",
+			"rarity": "rare",
+			"mana_cost": "{1}{W}",
+			"type": "Instant",
+			"collector_number": "4",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/4_Cloud's Limit Break.png"
+			}
+		},
+		{
+			"name": "Tifa Lockhart",
+			"rarity": "rare",
+			"mana_cost": "{1}{G}",
+			"type": "Legendary Creature — Human Monk",
+			"collector_number": "273",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/273_Tifa Lockhart.png"
+			}
+		},
+		{
+			"name": "Apprentice Xehanort",
+			"rarity": "rare",
+			"mana_cost": "{2}{U}{U}",
+			"type": "Legendary Creature — Human Scientist",
+			"collector_number": "59",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/59_Apprentice Xehanort.png"
+			}
+		},
+		{
+			"name": "Data Transformation Device",
+			"rarity": "mythic",
+			"mana_cost": "{2}{U}",
+			"type": "Artifact",
+			"collector_number": "70",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/70_Data Transformation Device.png"
+			}
+		},
+		{
+			"name": "Axel's Sacrifice",
+			"rarity": "rare",
+			"mana_cost": "{3}{R}{R}",
+			"type": "Sorcery",
+			"collector_number": "171",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/171_Axel's Sacrifice.png"
+			}
+		},
+		{
+			"name": "Unversed Mandrake",
+			"rarity": "common",
+			"mana_cost": "{1}{G}",
+			"type": "Creature — Unversed Treefolk",
+			"collector_number": "276",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/276_Unversed Mandrake.png"
+			}
+		},
+		{
+			"name": "Hero's Blessing",
+			"rarity": "common",
+			"mana_cost": "{G}",
+			"type": "Enchantment — Aura",
+			"collector_number": "253",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/253_Hero's Blessing.png"
+			}
+		},
+		{
+			"name": "Unversed Symphony",
+			"rarity": "common",
+			"mana_cost": "{4}{W}",
+			"type": "Creature — Unversed Performer",
+			"collector_number": "53",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/53_Unversed Symphony.png"
+			}
+		},
+		{
+			"name": "Rabid Dog Heartless",
+			"rarity": "common",
+			"mana_cost": "{1}{W}",
+			"type": "Creature — Dog Heartless",
+			"collector_number": "35",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/35_Rabid Dog Heartless.png"
+			}
+		},
+		{
+			"name": "Minute Bomb",
+			"rarity": "common",
+			"mana_cost": "{R}",
+			"type": "Creature — Heartless Elemental",
+			"collector_number": "201",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/201_Minute Bomb.png"
+			}
+		},
+		{
+			"name": "Keeba Tiger",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{W}{W}",
+			"type": "Enchantment Creature — Cat Spirit",
+			"collector_number": "18",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/18_Keeba Tiger.png"
+			}
+		},
+		{
+			"name": "Chef Kyroo",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{W}",
+			"type": "Enchantment Creature — Frog Spirit",
+			"collector_number": "2",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/2_Chef Kyroo.png"
+			}
+		},
+		{
+			"name": "Dual Stance",
+			"rarity": "rare",
+			"mana_cost": "{G}{G}",
+			"type": "Sorcery",
+			"collector_number": "242",
+			"image_uris": {
+				"en": "https://hiimswubbuhs-glitch.github.io/sets/KHE-files/img/242_Dual Stance.png"
+			}
+		}
+	]
+
+[rare(1)]
+	2 Nobody Dragoon
+	2 Soul Eater, Sword of Darkness
+	2 Radiant Garden
+	2 Hollow Bastion
+	2 Keyblade Graveyard
+	2 Disney Castle
+	2 The Perfected Replica
+	2 Xaldin, the Whirlwind Lancer
+	2 Marluxia, The Graceful Assassin
+	2 The Realm of Darkness
+	1 Guardians of Light
+	2 Chirithy
+	2 Young Master Xehanort
+	2 Foundations of the Past
+	2 Friends In My Heart
+	2 Spiked Crawler
+	2 Promises to Keep
+	2 Antlion
+	2 Kurt Zisa
+	2 Terra, Earthshaker
+	2 King Mickey
+	2 Rumbling Rose
+	2 Nobody Sorcerer
+	1 Ansem the Wise
+	2 DiZ
+	2 Vexen, the Chilly Academic
+	2 Saïx, The Luna Diviner
+	2 Withstand Combo
+	2 Yozora, Verum Rex
+	2 Barrier Master
+	2 Xehanort's Command
+	2 Cloud, Olympus Combatent
+	2 Mickey's Ulima Magic
+	2 My Friends Are My Power!
+	2 Shadow Stalker
+	2 Ventus, Awoken Wielder
+	2 Luxord, The Gambler of Fate
+	2 Xigbar, the Free Shooter
+	2 Blossom Shower
+	1 Sora, Link To All
+	2 Sora, Key to the Truth
+	2 Aqua, Keyblade Master
+	2 Donald's Thunder Magic
+	2 Goofy, Royal Defender
+	2 Parasol Beauty
+	2 Machine At The End Of The World
+	2 Promise Charm
+	2 Vanitas, Heart of Darkness
+	2 Master Xehanort
+	1 Lingering Will
+	2 Destiny Islands
+	2 Xion, Organization's Puppet
+	2 Demyx. Melodious Nocturne
+	2 Xemnas, Superior of the In-Between
+	2 Unknown
+	2 The Other Promise
+	2 Summon Tinker Bell
+	2 Glimmering Garments
+	2 The World That Never Was
+	2 Control of Darkness
+	2 Zexion, The Cloaked Schemer
+	2 Lexaeus, The Taciturn Stalwart
+	2 Larxene, The Savage Ninja
+	2 Ultima Weapon Keyblade
+	1 Zettaflare
+	2 Terra-Xehanort, Vessel of Darkness
+	1 The Black Box of Prophecy
+	1 The Master of Masters
+	1 Master Eraqus
+	2 Kairi, Searching for Light
+	1 Kairi, Fighting the Darkness
+	1 Riku, Keyblade Master
+	2 Riku, Battling Inner Darkness
+	2 Daybreak Town
+	2 Keyhole of Hollow Bastion
+	2 Keyhole of Destiny Islands
+	2 Keyhole of Traverse Town
+	2 Keyhole of Castle Oblivion
+	2 Keyhole of The Land of Departure
+	1 Heartless Lich
+	2 Birth By Sleep
+	2 Station of Sanctuary
+	2 Under The Sea
+	2 Closing The Door to Darkness
+	2 Blobmob
+	1 Grim Guardianess
+	2 Summon Wreck-It Ralph
+	2 Isa, Cold as Night
+	2 Lea, Burning Memory
+	2 Apprentice Even
+	1 Dilan, Knight of Ansem
+	2 Ienzo, Apprentice of Ansem
+	2 Burn Baby!
+	2 Birth of a Nobody
+	2 Roaming Throne
+	2 Aeleus, Warrior of Ansem
+	2 Organization XIII
+	2 Reflega!
+	1 Battle of the 1000 Heartless
+	2 Braig, Tracking Destiny
+	2 Fragments of Sorrow
+	1 Chernabog
+	2 Cloud's Limit Break
+	2 Tifa Lockhart
+	2 Apprentice Xehanort
+	1 Data Transformation Device
+	2 Axel's Sacrifice
+	2 Dual Stance
+[uncommon(3)]
+	4 Oathkeeper, Charm of Promise
+	4 Summon Ariel
+	4 Gummi Route Dispute
+	4 Chain of Memories
+	4 Heartless Wizard
+	4 Nobody Reaper
+	4 Heartless Behemoth
+	4 Darkside Destruction
+	4 Saved by Mickey
+	4 Xehanort's Influence
+	4 Pluto, Royal Companion
+	4 Sudo Neko
+	4 Kooma Panda
+	4 Commantis
+	4 Organization Resignation
+	4 Flash Step
+	4 Necho Cat
+	4 Kingdom Hearts
+	4 Komory Bat
+	4 Light of Remind
+	4 Star Seeker
+	4 Organization XIII Moogle
+	4 Heal!
+	4 Kairi, Princess of Heart
+	4 Sora, Keyblade's Chosen
+	4 Hot Rod
+	4 Thirst for Recognition
+	4 Air Battler
+	4 Zip Slasher
+	4 Summon Mushu
+	4 Searching The Other Side
+	4 Data Transfer
+	4 Summon Stitch
+	4 Into the 100 Acre Wood
+	4 Day 298 — Fracture
+	4 Worthy to Wield
+	4 Rejection of Fate
+	4 Lunar Eclipse
+	4 Crimson Jazz
+	4 Fat Bandit
+	4 Fenrir
+	4 Axel, The Flurry of Dancing Flames
+	4 Donald Duck, Court Wizard
+	4 Nobody Gambler
+	4 Fire!
+	4 Hero's Crest
+	4 Water Core
+	4 A Very Merry Unbirthday
+	4 Reverse Rebirth
+	4 Oblivion, Passing Memories
+	4 Demon Tide
+	4 Chaos Carriage
+	4 Final Chapter Prologue
+	4 Twilight Town Mansion
+	4 Circle of Life
+	4 Day 277 — Searching
+	4 Day 224 — Anomaly
+	4 Heartless Satyr
+	4 Decisive Pumpkin
+	4 Tama Sheep
+	4 Rowdy Rumble
+	4 Lion Form
+	4 Heartless Edict
+	4 Toy Soldier
+	4 Wight Knight
+	4 Monochrome
+	4 Guardian Soul
+	4 Fatal Crest
+	4 Kingdom Key D
+	4 Nobody Ninja
+	4 Dismiss of Darkness
+	4 Dive to Heart
+	4 Heartless Defender
+	4 The Twilight Road to Dawn
+	4 Way to the Dawn
+	4 Roxas, Key of Destiny
+	4 Post Mission Debrief
+	4 Riku, Seeker of Worlds
+	4 Paopu Fruit Promise
+	4 Ansem, Seeker of Darkness
+	4 Two Become One
+	4 Summon Genie
+	4 Summon Bambi
+	4 Heartbinder
+	4 Twilight Thorn
+	4 End of the World
+	4 Ephemer, Light of the Past
+	4 Skuld, Hopeful Dandelion
+	4 Strelitzia, the Missing Sister
+	4 Heartless Manufactory
+	4 Talisman of Resilience
+	4 Talisman of Creativity
+	4 Talisman of Dominance
+	4 Talisman of Curiosity
+	4 Talisman of Hierarchy
+	4 Talisman of Progress
+	4 Talisman of Conviction
+	4 Talisman of Indulgence
+	4 Talisman of Impulse
+	4 Talisman of Unity
+	4 Dream Drop Distance
+	4 Dual Wield
+	4 Darkness of the Unknown
+	4 Replica's Sacrifice
+	4 Wishing Lamp
+	4 Gull Wing
+	4 Cornerstone of Light
+	4 The Gummi Ship
+	4 Leechgrave
+	4 Twilight Blaze
+	4 Face my Fears
+	4 Chip and Dale, Gummi Mechanics
+	4 Darkside
+	4 Salvaged From Darkness
+	4 Replica Program
+	4 Light of Destruction
+	4 Stealth Sneak
+	4 Photon Debugger
+	4 Ominous Blight
+	4 Crescendo
+	4 Nobody Assassin
+	4 Bouncywild
+	4 Pot Scorpion
+	4 Creeper Plant
+	4 Hook Bat
+	4 Beast's Castle
+	4 Agrabah
+	4 Pride Lands
+	4 Atlantica
+	4 Port Royal
+	4 Timeless River
+	4 Halloween Town
+	4 Land of Dragons
+	4 Olympus Coliseum
+	4 Space Paranoids
+	4 Unversed Bruiser
+	4 Unchained Weilder
+	4 Keeba Tiger
+	4 Chef Kyroo
+[common(7)]
+	8 Follow the Wind
+	8 Nobody Dusk
+	8 Summon Meow Wow
+	8 Nobody Creeper
+	8 Summon Simba
+	8 Visit To The Final World
+	8 Trick Ghost
+	8 Sleeping Lion
+	8 Light, Give Me Strength!
+	8 Kingdom Key
+	8 Destiny Islands Trio
+	8 Sora's Sleeping Pod
+	8 Heartless Battleship
+	8 Screwdiver
+	8 Heartless Gargoyle Warrior
+	8 Heartless Gargoyle
+	8 Guard Armor
+	8 Icy Cube
+	8 Jiminy Cricket, Journal Author
+	8 Blue Rhapsody
+	8 Stored in Data
+	8 Nobody Memories
+	8 Card Break
+	8 Deep Freeze!
+	8 Ready to Fight
+	8 Succumb to Darkness
+	8 Heartless Shadow
+	8 Barrel Spider
+	8 Black Fungus
+	8 Bargain of Darkness
+	8 Bulky Vendor
+	8 Maleficent's Darkness
+	8 Large Body
+	8 Nobody Berserker
+	8 Thirst Of The Darkling's
+	8 Black Coat of Organization XIII
+	8 Night of Fate
+	8 Gummi Ship Shortcut
+	8 Hammer Frame
+	8 Heartless Shaman
+	8 Luna Bandit
+	8 Ursus Wielder
+	8 Heartless Wyvern
+	8 Cid's Virus Program
+	8 Nobody Dancer
+	8 Nobody Samurai
+	8 Nobody Sniper
+	8 Hidden Dragon
+	8 Bond of Flame
+	8 Organization XIII Mission
+	8 Thunder!
+	8 Struggle Panic
+	8 Ray of Hope
+	8 Hockomonkey
+	8 Holey Moley
+	8 Yoggy Ram
+	8 Staggerceps
+	8 Earth Core
+	8 Pressed for Time
+	8 Journal of Travelled Lands
+	8 Sea-Salt Trio
+	8 Commune with the Composer
+	8 Lazy Afternoons
+	8 Sea-Salt Ice Cream
+	8 Omega Weapon
+	8 Sign of Innocence
+	8 Summon Dumbo
+	8 Day 354 — Truth
+	8 Vulpes Wielder
+	8 Heartless Neoshadow
+	8 Naminé, Memory Distorter
+	8 Arabian Dream
+	8 Summon Chicken Little
+	8 R & R Seal
+	8 Pricklemane
+	8 Defending Hollow Bastion
+	8 Heartless Pirate
+	8 Unicornis Wielder
+	8 Powerwild
+	8 Search Ghost
+	8 Anguis Wielder
+	8 Leopardos Wielder
+	8 Crown of Guilt
+	8 Popcat
+	8 Chief Puff
+	8 Flame Core
+	8 Pink Agaricus
+	8 Assault Rider
+	8 Bizzare Archer
+	8 Lance Soldier
+	8 Unversed Flood
+	8 Unversed Scrapper
+	8 Day 359 — The First Day
+	8 Combat Tutorial
+	8 Orichalcum +
+	8 World Map
+	8 Shrouding Dark Cloud
+	8 Unversed Mandrake
+	8 Hero's Blessing
+	8 Unversed Symphony
+	8 Rabid Dog Heartless
+	8 Minute Bomb
+[foil(1)]
+	12 Follow the Wind
+	12 Nobody Dusk
+	12 Summon Meow Wow
+	12 Nobody Creeper
+	12 Summon Simba
+	12 Visit To The Final World
+	12 Trick Ghost
+	12 Sleeping Lion
+	12 Light, Give Me Strength!
+	6 Oathkeeper, Charm of Promise
+	12 Kingdom Key
+	12 Destiny Islands Trio
+	12 Sora's Sleeping Pod
+	12 Heartless Battleship
+	12 Screwdiver
+	12 Heartless Gargoyle Warrior
+	12 Heartless Gargoyle
+	12 Guard Armor
+	12 Icy Cube
+	12 Jiminy Cricket, Journal Author
+	12 Blue Rhapsody
+	6 Summon Ariel
+	12 Stored in Data
+	12 Nobody Memories
+	12 Card Break
+	12 Deep Freeze!
+	6 Gummi Route Dispute
+	12 Ready to Fight
+	12 Succumb to Darkness
+	6 Chain of Memories
+	12 Heartless Shadow
+	12 Barrel Spider
+	6 Heartless Wizard
+	12 Black Fungus
+	12 Bargain of Darkness
+	12 Bulky Vendor
+	12 Maleficent's Darkness
+	12 Large Body
+	6 Nobody Reaper
+	12 Nobody Berserker
+	6 Heartless Behemoth
+	12 Thirst Of The Darkling's
+	12 Black Coat of Organization XIII
+	6 Darkside Destruction
+	12 Night of Fate
+	6 Saved by Mickey
+	12 Gummi Ship Shortcut
+	12 Hammer Frame
+	12 Heartless Shaman
+	12 Luna Bandit
+	12 Ursus Wielder
+	12 Heartless Wyvern
+	12 Cid's Virus Program
+	12 Nobody Dancer
+	2 Nobody Dragoon
+	12 Nobody Samurai
+	12 Nobody Sniper
+	12 Hidden Dragon
+	12 Bond of Flame
+	12 Organization XIII Mission
+	12 Thunder!
+	12 Struggle Panic
+	6 Xehanort's Influence
+	6 Pluto, Royal Companion
+	6 Sudo Neko
+	12 Ray of Hope
+	6 Kooma Panda
+	6 Commantis
+	12 Hockomonkey
+	12 Holey Moley
+	12 Yoggy Ram
+	12 Staggerceps
+	12 Earth Core
+	12 Pressed for Time
+	12 Journal of Travelled Lands
+	12 Sea-Salt Trio
+	6 Organization Resignation
+	12 Commune with the Composer
+	12 Lazy Afternoons
+	2 Soul Eater, Sword of Darkness
+	2 Radiant Garden
+	2 Hollow Bastion
+	2 Keyblade Graveyard
+	2 Disney Castle
+	2 The Perfected Replica
+	2 Xaldin, the Whirlwind Lancer
+	2 Marluxia, The Graceful Assassin
+	2 The Realm of Darkness
+	1 Guardians of Light
+	2 Chirithy
+	2 Young Master Xehanort
+	2 Foundations of the Past
+	2 Friends In My Heart
+	2 Spiked Crawler
+	2 Promises to Keep
+	2 Antlion
+	2 Kurt Zisa
+	2 Terra, Earthshaker
+	2 King Mickey
+	2 Rumbling Rose
+	2 Nobody Sorcerer
+	6 Flash Step
+	1 Ansem the Wise
+	2 DiZ
+	2 Vexen, the Chilly Academic
+	2 Saïx, The Luna Diviner
+	2 Withstand Combo
+	2 Yozora, Verum Rex
+	2 Barrier Master
+	2 Xehanort's Command
+	2 Cloud, Olympus Combatent
+	2 Mickey's Ulima Magic
+	2 My Friends Are My Power!
+	2 Shadow Stalker
+	2 Ventus, Awoken Wielder
+	2 Luxord, The Gambler of Fate
+	2 Xigbar, the Free Shooter
+	2 Blossom Shower
+	6 Necho Cat
+	6 Kingdom Hearts
+	12 Sea-Salt Ice Cream
+	6 Komory Bat
+	6 Light of Remind
+	6 Star Seeker
+	12 Omega Weapon
+	1 Sora, Link To All
+	2 Sora, Key to the Truth
+	6 Organization XIII Moogle
+	6 Heal!
+	6 Kairi, Princess of Heart
+	6 Sora, Keyblade's Chosen
+	6 Hot Rod
+	6 Thirst for Recognition
+	6 Air Battler
+	6 Zip Slasher
+	12 Sign of Innocence
+	6 Summon Mushu
+	2 Aqua, Keyblade Master
+	6 Searching The Other Side
+	6 Data Transfer
+	6 Summon Stitch
+	12 Summon Dumbo
+	6 Into the 100 Acre Wood
+	6 Day 298 — Fracture
+	6 Worthy to Wield
+	6 Rejection of Fate
+	6 Lunar Eclipse
+	6 Crimson Jazz
+	6 Fat Bandit
+	6 Fenrir
+	6 Axel, The Flurry of Dancing Flames
+	6 Donald Duck, Court Wizard
+	6 Nobody Gambler
+	2 Donald's Thunder Magic
+	6 Fire!
+	6 Hero's Crest
+	12 Day 354 — Truth
+	6 Water Core
+	6 A Very Merry Unbirthday
+	6 Reverse Rebirth
+	6 Oblivion, Passing Memories
+	6 Demon Tide
+	6 Chaos Carriage
+	6 Final Chapter Prologue
+	6 Twilight Town Mansion
+	6 Circle of Life
+	6 Day 277 — Searching
+	6 Day 224 — Anomaly
+	6 Heartless Satyr
+	6 Decisive Pumpkin
+	6 Tama Sheep
+	12 Vulpes Wielder
+	2 Goofy, Royal Defender
+	6 Rowdy Rumble
+	6 Lion Form
+	6 Heartless Edict
+	6 Toy Soldier
+	2 Parasol Beauty
+	6 Wight Knight
+	6 Monochrome
+	6 Guardian Soul
+	6 Fatal Crest
+	6 Kingdom Key D
+	6 Nobody Ninja
+	6 Dismiss of Darkness
+	6 Dive to Heart
+	6 Heartless Defender
+	12 Heartless Neoshadow
+	6 The Twilight Road to Dawn
+	6 Way to the Dawn
+	2 Machine At The End Of The World
+	6 Roxas, Key of Destiny
+	2 Promise Charm
+	2 Vanitas, Heart of Darkness
+	6 Post Mission Debrief
+	6 Riku, Seeker of Worlds
+	2 Master Xehanort
+	1 Lingering Will
+	2 Destiny Islands
+	2 Xion, Organization's Puppet
+	12 Naminé, Memory Distorter
+	6 Paopu Fruit Promise
+	2 Demyx. Melodious Nocturne
+	2 Xemnas, Superior of the In-Between
+	6 Ansem, Seeker of Darkness
+	12 Arabian Dream
+	2 Unknown
+	2 The Other Promise
+	6 Two Become One
+	2 Summon Tinker Bell
+	6 Summon Genie
+	6 Summon Bambi
+	12 Summon Chicken Little
+	6 Heartbinder
+	6 Twilight Thorn
+	6 End of the World
+	2 Glimmering Garments
+	6 Ephemer, Light of the Past
+	6 Skuld, Hopeful Dandelion
+	6 Strelitzia, the Missing Sister
+	6 Heartless Manufactory
+	2 The World That Never Was
+	6 Talisman of Resilience
+	6 Talisman of Creativity
+	6 Talisman of Dominance
+	6 Talisman of Curiosity
+	6 Talisman of Hierarchy
+	6 Talisman of Progress
+	6 Talisman of Conviction
+	6 Talisman of Indulgence
+	6 Talisman of Impulse
+	6 Talisman of Unity
+	6 Dream Drop Distance
+	6 Dual Wield
+	6 Darkness of the Unknown
+	6 Replica's Sacrifice
+	2 Control of Darkness
+	12 R & R Seal
+	12 Pricklemane
+	12 Defending Hollow Bastion
+	6 Wishing Lamp
+	6 Gull Wing
+	6 Cornerstone of Light
+	6 The Gummi Ship
+	6 Leechgrave
+	6 Twilight Blaze
+	6 Face my Fears
+	12 Heartless Pirate
+	12 Unicornis Wielder
+	6 Chip and Dale, Gummi Mechanics
+	6 Darkside
+	6 Salvaged From Darkness
+	6 Replica Program
+	6 Light of Destruction
+	2 Zexion, The Cloaked Schemer
+	2 Lexaeus, The Taciturn Stalwart
+	2 Larxene, The Savage Ninja
+	6 Stealth Sneak
+	2 Ultima Weapon Keyblade
+	6 Photon Debugger
+	1 Zettaflare
+	2 Terra-Xehanort, Vessel of Darkness
+	12 Powerwild
+	12 Search Ghost
+	12 Anguis Wielder
+	12 Leopardos Wielder
+	12 Crown of Guilt
+	12 Popcat
+	6 Ominous Blight
+	12 Chief Puff
+	1 The Black Box of Prophecy
+	1 The Master of Masters
+	1 Master Eraqus
+	2 Kairi, Searching for Light
+	1 Kairi, Fighting the Darkness
+	1 Riku, Keyblade Master
+	2 Riku, Battling Inner Darkness
+	6 Crescendo
+	2 Daybreak Town
+	2 Keyhole of Hollow Bastion
+	2 Keyhole of Destiny Islands
+	2 Keyhole of Traverse Town
+	2 Keyhole of Castle Oblivion
+	2 Keyhole of The Land of Departure
+	6 Nobody Assassin
+	12 Flame Core
+	1 Heartless Lich
+	6 Bouncywild
+	6 Pot Scorpion
+	6 Creeper Plant
+	6 Hook Bat
+	2 Birth By Sleep
+	6 Beast's Castle
+	6 Agrabah
+	6 Pride Lands
+	6 Atlantica
+	6 Port Royal
+	6 Timeless River
+	6 Halloween Town
+	6 Land of Dragons
+	6 Olympus Coliseum
+	6 Space Paranoids
+	2 Station of Sanctuary
+	2 Under The Sea
+	2 Closing The Door to Darkness
+	12 Pink Agaricus
+	12 Assault Rider
+	12 Bizzare Archer
+	12 Lance Soldier
+	12 Unversed Flood
+	6 Unversed Bruiser
+	12 Unversed Scrapper
+	2 Blobmob
+	1 Grim Guardianess
+	2 Summon Wreck-It Ralph
+	2 Isa, Cold as Night
+	2 Lea, Burning Memory
+	2 Apprentice Even
+	1 Dilan, Knight of Ansem
+	2 Ienzo, Apprentice of Ansem
+	2 Burn Baby!
+	2 Birth of a Nobody
+	2 Roaming Throne
+	2 Aeleus, Warrior of Ansem
+	12 Day 359 — The First Day
+	12 Combat Tutorial
+	6 Unchained Weilder
+	2 Organization XIII
+	12 Orichalcum +
+	12 World Map
+	2 Reflega!
+	12 Shrouding Dark Cloud
+	1 Battle of the 1000 Heartless
+	2 Braig, Tracking Destiny
+	2 Fragments of Sorrow
+	1 Chernabog
+	2 Cloud's Limit Break
+	2 Tifa Lockhart
+	2 Apprentice Xehanort
+	1 Data Transformation Device
+	2 Axel's Sacrifice
+	12 Unversed Mandrake
+	12 Hero's Blessing
+	12 Unversed Symphony
+	12 Rabid Dog Heartless
+	12 Minute Bomb
+	6 Keeba Tiger
+	6 Chef Kyroo
+	2 Dual Stance
+[wildcard(1)]
+	6 Follow the Wind
+	6 Nobody Dusk
+	6 Summon Meow Wow
+	6 Nobody Creeper
+	6 Summon Simba
+	6 Visit To The Final World
+	6 Trick Ghost
+	6 Sleeping Lion
+	6 Light, Give Me Strength!
+	15 Oathkeeper, Charm of Promise
+	6 Kingdom Key
+	6 Destiny Islands Trio
+	6 Sora's Sleeping Pod
+	6 Heartless Battleship
+	6 Screwdiver
+	6 Heartless Gargoyle Warrior
+	6 Heartless Gargoyle
+	6 Guard Armor
+	6 Icy Cube
+	6 Jiminy Cricket, Journal Author
+	6 Blue Rhapsody
+	15 Summon Ariel
+	6 Stored in Data
+	6 Nobody Memories
+	6 Card Break
+	6 Deep Freeze!
+	15 Gummi Route Dispute
+	6 Ready to Fight
+	6 Succumb to Darkness
+	15 Chain of Memories
+	6 Heartless Shadow
+	6 Barrel Spider
+	15 Heartless Wizard
+	6 Black Fungus
+	6 Bargain of Darkness
+	6 Bulky Vendor
+	6 Maleficent's Darkness
+	6 Large Body
+	15 Nobody Reaper
+	6 Nobody Berserker
+	15 Heartless Behemoth
+	6 Thirst Of The Darkling's
+	6 Black Coat of Organization XIII
+	15 Darkside Destruction
+	6 Night of Fate
+	15 Saved by Mickey
+	6 Gummi Ship Shortcut
+	6 Hammer Frame
+	6 Heartless Shaman
+	6 Luna Bandit
+	6 Ursus Wielder
+	6 Heartless Wyvern
+	6 Cid's Virus Program
+	6 Nobody Dancer
+	7 Nobody Dragoon
+	6 Nobody Samurai
+	6 Nobody Sniper
+	6 Hidden Dragon
+	6 Bond of Flame
+	6 Organization XIII Mission
+	6 Thunder!
+	6 Struggle Panic
+	15 Xehanort's Influence
+	15 Pluto, Royal Companion
+	15 Sudo Neko
+	6 Ray of Hope
+	15 Kooma Panda
+	15 Commantis
+	6 Hockomonkey
+	6 Holey Moley
+	6 Yoggy Ram
+	6 Staggerceps
+	6 Earth Core
+	6 Pressed for Time
+	6 Journal of Travelled Lands
+	6 Sea-Salt Trio
+	15 Organization Resignation
+	6 Commune with the Composer
+	6 Lazy Afternoons
+	7 Soul Eater, Sword of Darkness
+	7 Radiant Garden
+	7 Hollow Bastion
+	7 Keyblade Graveyard
+	7 Disney Castle
+	7 The Perfected Replica
+	7 Xaldin, the Whirlwind Lancer
+	7 Marluxia, The Graceful Assassin
+	7 The Realm of Darkness
+	4 Guardians of Light
+	7 Chirithy
+	7 Young Master Xehanort
+	7 Foundations of the Past
+	7 Friends In My Heart
+	7 Spiked Crawler
+	7 Promises to Keep
+	7 Antlion
+	7 Kurt Zisa
+	7 Terra, Earthshaker
+	7 King Mickey
+	7 Rumbling Rose
+	7 Nobody Sorcerer
+	15 Flash Step
+	4 Ansem the Wise
+	7 DiZ
+	7 Vexen, the Chilly Academic
+	7 Saïx, The Luna Diviner
+	7 Withstand Combo
+	7 Yozora, Verum Rex
+	7 Barrier Master
+	7 Xehanort's Command
+	7 Cloud, Olympus Combatent
+	7 Mickey's Ulima Magic
+	7 My Friends Are My Power!
+	7 Shadow Stalker
+	7 Ventus, Awoken Wielder
+	7 Luxord, The Gambler of Fate
+	7 Xigbar, the Free Shooter
+	7 Blossom Shower
+	15 Necho Cat
+	15 Kingdom Hearts
+	6 Sea-Salt Ice Cream
+	15 Komory Bat
+	15 Light of Remind
+	15 Star Seeker
+	6 Omega Weapon
+	4 Sora, Link To All
+	7 Sora, Key to the Truth
+	15 Organization XIII Moogle
+	15 Heal!
+	15 Kairi, Princess of Heart
+	15 Sora, Keyblade's Chosen
+	15 Hot Rod
+	15 Thirst for Recognition
+	15 Air Battler
+	15 Zip Slasher
+	6 Sign of Innocence
+	15 Summon Mushu
+	7 Aqua, Keyblade Master
+	15 Searching The Other Side
+	15 Data Transfer
+	15 Summon Stitch
+	6 Summon Dumbo
+	15 Into the 100 Acre Wood
+	15 Day 298 — Fracture
+	15 Worthy to Wield
+	15 Rejection of Fate
+	15 Lunar Eclipse
+	15 Crimson Jazz
+	15 Fat Bandit
+	15 Fenrir
+	15 Axel, The Flurry of Dancing Flames
+	15 Donald Duck, Court Wizard
+	15 Nobody Gambler
+	7 Donald's Thunder Magic
+	15 Fire!
+	15 Hero's Crest
+	6 Day 354 — Truth
+	15 Water Core
+	15 A Very Merry Unbirthday
+	15 Reverse Rebirth
+	15 Oblivion, Passing Memories
+	15 Demon Tide
+	15 Chaos Carriage
+	15 Final Chapter Prologue
+	15 Twilight Town Mansion
+	15 Circle of Life
+	15 Day 277 — Searching
+	15 Day 224 — Anomaly
+	15 Heartless Satyr
+	15 Decisive Pumpkin
+	15 Tama Sheep
+	6 Vulpes Wielder
+	7 Goofy, Royal Defender
+	15 Rowdy Rumble
+	15 Lion Form
+	15 Heartless Edict
+	15 Toy Soldier
+	7 Parasol Beauty
+	15 Wight Knight
+	15 Monochrome
+	15 Guardian Soul
+	15 Fatal Crest
+	15 Kingdom Key D
+	15 Nobody Ninja
+	15 Dismiss of Darkness
+	15 Dive to Heart
+	15 Heartless Defender
+	6 Heartless Neoshadow
+	15 The Twilight Road to Dawn
+	15 Way to the Dawn
+	7 Machine At The End Of The World
+	15 Roxas, Key of Destiny
+	7 Promise Charm
+	7 Vanitas, Heart of Darkness
+	15 Post Mission Debrief
+	15 Riku, Seeker of Worlds
+	7 Master Xehanort
+	4 Lingering Will
+	7 Destiny Islands
+	7 Xion, Organization's Puppet
+	6 Naminé, Memory Distorter
+	15 Paopu Fruit Promise
+	7 Demyx. Melodious Nocturne
+	7 Xemnas, Superior of the In-Between
+	15 Ansem, Seeker of Darkness
+	6 Arabian Dream
+	7 Unknown
+	7 The Other Promise
+	15 Two Become One
+	7 Summon Tinker Bell
+	15 Summon Genie
+	15 Summon Bambi
+	6 Summon Chicken Little
+	15 Heartbinder
+	15 Twilight Thorn
+	15 End of the World
+	7 Glimmering Garments
+	15 Ephemer, Light of the Past
+	15 Skuld, Hopeful Dandelion
+	15 Strelitzia, the Missing Sister
+	15 Heartless Manufactory
+	7 The World That Never Was
+	15 Talisman of Resilience
+	15 Talisman of Creativity
+	15 Talisman of Dominance
+	15 Talisman of Curiosity
+	15 Talisman of Hierarchy
+	15 Talisman of Progress
+	15 Talisman of Conviction
+	15 Talisman of Indulgence
+	15 Talisman of Impulse
+	15 Talisman of Unity
+	15 Dream Drop Distance
+	15 Dual Wield
+	15 Darkness of the Unknown
+	15 Replica's Sacrifice
+	7 Control of Darkness
+	6 R & R Seal
+	6 Pricklemane
+	6 Defending Hollow Bastion
+	15 Wishing Lamp
+	15 Gull Wing
+	15 Cornerstone of Light
+	15 The Gummi Ship
+	15 Leechgrave
+	15 Twilight Blaze
+	15 Face my Fears
+	6 Heartless Pirate
+	6 Unicornis Wielder
+	15 Chip and Dale, Gummi Mechanics
+	15 Darkside
+	15 Salvaged From Darkness
+	15 Replica Program
+	15 Light of Destruction
+	7 Zexion, The Cloaked Schemer
+	7 Lexaeus, The Taciturn Stalwart
+	7 Larxene, The Savage Ninja
+	15 Stealth Sneak
+	7 Ultima Weapon Keyblade
+	15 Photon Debugger
+	4 Zettaflare
+	7 Terra-Xehanort, Vessel of Darkness
+	6 Powerwild
+	6 Search Ghost
+	6 Anguis Wielder
+	6 Leopardos Wielder
+	6 Crown of Guilt
+	6 Popcat
+	15 Ominous Blight
+	6 Chief Puff
+	4 The Black Box of Prophecy
+	4 The Master of Masters
+	4 Master Eraqus
+	7 Kairi, Searching for Light
+	4 Kairi, Fighting the Darkness
+	4 Riku, Keyblade Master
+	7 Riku, Battling Inner Darkness
+	15 Crescendo
+	7 Daybreak Town
+	7 Keyhole of Hollow Bastion
+	7 Keyhole of Destiny Islands
+	7 Keyhole of Traverse Town
+	7 Keyhole of Castle Oblivion
+	7 Keyhole of The Land of Departure
+	15 Nobody Assassin
+	6 Flame Core
+	4 Heartless Lich
+	15 Bouncywild
+	15 Pot Scorpion
+	15 Creeper Plant
+	15 Hook Bat
+	7 Birth By Sleep
+	15 Beast's Castle
+	15 Agrabah
+	15 Pride Lands
+	15 Atlantica
+	15 Port Royal
+	15 Timeless River
+	15 Halloween Town
+	15 Land of Dragons
+	15 Olympus Coliseum
+	15 Space Paranoids
+	7 Station of Sanctuary
+	7 Under The Sea
+	7 Closing The Door to Darkness
+	6 Pink Agaricus
+	6 Assault Rider
+	6 Bizzare Archer
+	6 Lance Soldier
+	6 Unversed Flood
+	15 Unversed Bruiser
+	6 Unversed Scrapper
+	7 Blobmob
+	4 Grim Guardianess
+	7 Summon Wreck-It Ralph
+	7 Isa, Cold as Night
+	7 Lea, Burning Memory
+	7 Apprentice Even
+	4 Dilan, Knight of Ansem
+	7 Ienzo, Apprentice of Ansem
+	7 Burn Baby!
+	7 Birth of a Nobody
+	7 Roaming Throne
+	7 Aeleus, Warrior of Ansem
+	6 Day 359 — The First Day
+	6 Combat Tutorial
+	15 Unchained Weilder
+	7 Organization XIII
+	6 Orichalcum +
+	6 World Map
+	7 Reflega!
+	6 Shrouding Dark Cloud
+	4 Battle of the 1000 Heartless
+	7 Braig, Tracking Destiny
+	7 Fragments of Sorrow
+	4 Chernabog
+	7 Cloud's Limit Break
+	7 Tifa Lockhart
+	7 Apprentice Xehanort
+	4 Data Transformation Device
+	7 Axel's Sacrifice
+	6 Unversed Mandrake
+	6 Hero's Blessing
+	6 Unversed Symphony
+	6 Rabid Dog Heartless
+	6 Minute Bomb
+	15 Keeba Tiger
+	15 Chef Kyroo
+	7 Dual Stance

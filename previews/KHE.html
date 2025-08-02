@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="icon" type="image/png" href="/sets/KHE-files/icon.png"/>
+	<link rel="stylesheet" href="/resources/header.css">
+	<title>KHE visual preview</title>
+	<style>
+		@font-face {
+			font-family: Beleren;
+			src: url('/resources/beleren.ttf');
+		}
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+			overscroll-behavior: none;
+			background-size: cover;
+			background-attachment: fixed;
+		}
+		.main-content {
+			position: relative;
+			width: 100%;
+			float: left;
+			z-index: 2;
+			justify-items: center;
+		}
+		.sidebar {
+			position: sticky;
+			top: 0;
+			display: none;
+			text-align: center;
+			padding-right: 3%;
+			z-index: 1;
+			justify-items: center;
+		}
+		.sidebar-container {
+			width: 80%;
+			max-width: 375px;
+			position: relative;
+		}
+		.sidebar-h-img {
+			display: none;
+			transform: rotate(90deg);
+			position: absolute;
+			left: 10%;
+			top: 10%;
+			width: 85%;
+		}
+		.sidebar-img {
+			vertical-align: middle;
+			width: 100%;
+		}
+		.close-btn {
+			background: url('/img/close.png') no-repeat;
+			background-size: contain;
+			background-position: center;
+			width: 10%;
+			height: 10%;
+			border: none;
+			cursor: pointer;
+			position: absolute;
+			right: 4%;
+		}
+		.close-btn:hover {
+			background: url('/img/close-hover.png') no-repeat;
+			background-size: contain;
+			background-position: center;
+		}
+		.grid-container {
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+			gap: 2px;
+			padding-left: 5%;
+			padding-right: 5%;
+			padding-bottom: 1%;
+			justify-items: center;
+			max-width: 1200px;
+		}
+		.grid-container img {
+			width: 100%;
+			height: auto;
+			display: block;
+			visibility: hidden;
+			cursor: pointer;
+		}
+		.banner {
+			width: 100%;
+			height: auto;
+			padding-top: 80px;
+			padding-bottom: 50px;
+		}
+		.logo {
+			display: block;
+			margin: auto;
+			max-width: 30%;
+			max-height: 320px;
+		}
+		.container {
+			position: relative;
+			width: 100%;
+		}
+		.container img {
+			width: 100%;
+			height: auto;
+		}
+		.flip-btn {
+			background: url('/img/flip.png') no-repeat;
+			background-size: contain;
+			background-position: center;
+			width: 15%;
+			height: 11%;
+			cursor: pointer;
+			border: none;
+			position: absolute;
+			left: 50%;
+			top: 48%;
+			transform: translate(-50%, -50%);
+			opacity: 0.5;
+		}
+		.flip-btn:hover {
+			background: url('/img/flip-hover.png') no-repeat;
+			background-size: contain;
+			background-position: center;
+		}
+		.dropdown {
+			background: rgba(23, 23, 23, 0.8);
+			border-radius: 8px;
+			position: absolute;
+			left: 10%;
+			width: fit-content;
+			margin: 20px 0;
+			padding: 5px 0;
+			display: flex;
+			flex-direction: column;
+			z-index: 3;
+		}
+		.dropdown .set-bar {
+			font-family: Beleren;
+			font-size: 20px;
+			text-decoration: none;
+			color: #e3e3e3;
+			display: flex;
+			gap: 10px;
+			align-items: center;
+			padding: 0 12px;
+			margin: 5px;
+		}
+		.dropdown .set-bar:hover {
+			background: rgba(163, 163, 163, 0.5);
+			color: #f3f3f3;
+		}
+		.dropdown .set-bar img {
+			width: 32px;
+		}
+		.dropdown .inactive {
+			height: 0px;
+			overflow: hidden;
+			margin: 0px 5px;
+		}
+		.preload-hidden {
+			display: none;
+		}
+		.addenda-container {
+			text-align: center;
+			width: fit-content;
+			max-width: 1200px;
+			padding: 0 5%;
+		}
+		/* This is here to enable the stickiness in a Float environment. I don't know why it works but it does */
+		.footer {
+			clear: both;
+		}
+	</style>
+</head>
+<body>
+	<img class="preload-hidden" src="/img/dot.png" />
+	<img class="preload-hidden" src="/sets/KHE-files/logo.png" />
+	<img class="preload-hidden" src="/sets/KHE-files/icon.png" />
+		<div class="header">
+		<div class="search-grid">
+			<a href="/"><img class="sg-logo" src="/img/banner.png"></a>
+			<img class="sg-icon" src="/img/search.png">
+			<input type="text" inputmode="search" placeholder="Search ..." name="search" id="search" spellcheck="false" autocomplete="off" autocorrect="off" spellcheck="false">
+			<a href="/all-sets"><img src="/img/sets.png" class="sg-icon">Sets</a>
+			<a href="/deckbuilder"><img src="/img/deck.png" class="sg-icon">Deckbuilder</a>
+			<a onclick="randomCard()"><img src="/img/random.png" class="sg-icon">Random</a>
+		</div>
+	</div>
+
+	<div class="dropdown" onmouseenter="rolldown()" onmouseleave="rollup()">
+	
+		<a class="set-bar" href="KHE"><img src="/sets/KHE-files/icon.png">Universes Beyond — Kingdom Hearts</a>
+	
+		</div>
+		<div class="banner">
+		<img class="logo" src="/sets/KHE-files/logo.png">
+		</div>
+		<div class="main-content" id="main-content">
+			<div class="grid-container">
+					<div class="container"><img alt="/sets\KHE-files\img\15_Kairi, Fighting the Darkness.png" id="15_Kairi, Fighting the Darkness" data-flag="@X" onclick="openSidebar('15_Kairi, Fighting the Darkness',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\57_Ansem the Wise.png" id="57_Ansem the Wise" data-flag="@X" onclick="openSidebar('57_Ansem the Wise',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\113_Battle of the 1000 Heartless.png" id="113_Battle of the 1000 Heartless" data-flag="@X" onclick="openSidebar('113_Battle of the 1000 Heartless',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\182_Dilan, Knight of Ansem.png" id="182_Dilan, Knight of Ansem" data-flag="@X" onclick="openSidebar('182_Dilan, Knight of Ansem',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\248_Grim Guardianess.png" id="248_Grim Guardianess" data-flag="@X" onclick="openSidebar('248_Grim Guardianess',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\41_Sora, Link To All.png" id="41_Sora, Link To All" data-flag="@X" onclick="openSidebar('41_Sora, Link To All',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\70_Data Transformation Device.png" id="70_Data Transformation Device" data-flag="@X" onclick="openSidebar('70_Data Transformation Device',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\114_The Black Box of Prophecy.png" id="114_The Black Box of Prophecy" data-flag="@X" onclick="openSidebar('114_The Black Box of Prophecy',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\224_Zettaflare.png" id="224_Zettaflare" data-flag="@X" onclick="openSidebar('224_Zettaflare',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\249_Guardians of Light.png" id="249_Guardians of Light" data-flag="@X" onclick="openSidebar('249_Guardians of Light',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\3_Cloud, Olympus Combatent.png" id="3_Cloud, Olympus Combatent" data-flag="@X" onclick="openSidebar('3_Cloud, Olympus Combatent',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\58_Apprentice Even.png" id="58_Apprentice Even" data-flag="@X" onclick="openSidebar('58_Apprentice Even',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\118_Chernabog.png" id="118_Chernabog" data-flag="@X" onclick="openSidebar('118_Chernabog',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\168_Aeleus, Warrior of Ansem.png" id="168_Aeleus, Warrior of Ansem" data-flag="@X" onclick="openSidebar('168_Aeleus, Warrior of Ansem',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\225_Antlion.png" id="225_Antlion" data-flag="@X" onclick="openSidebar('225_Antlion',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\4_Cloud's Limit Break.png" id="4_Clouds Limit Break" data-flag="@X" onclick="openSidebar('4_Clouds Limit Break',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\59_Apprentice Xehanort.png" id="59_Apprentice Xehanort" data-flag="@X" onclick="openSidebar('59_Apprentice Xehanort',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\129_Heartless Lich.png" id="129_Heartless Lich" data-flag="@X" onclick="openSidebar('129_Heartless Lich',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\171_Axel's Sacrifice.png" id="171_Axels Sacrifice" data-flag="@X" onclick="openSidebar('171_Axels Sacrifice',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\227_Birth By Sleep.png" id="227_Birth By Sleep" data-flag="@X" onclick="openSidebar('227_Birth By Sleep',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\14_Ienzo, Apprentice of Ansem.png" id="14_Ienzo, Apprentice of Ansem" data-flag="@X" onclick="openSidebar('14_Ienzo, Apprentice of Ansem',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\60_Aqua, Keyblade Master.png" id="60_Aqua, Keyblade Master" data-flag="@X" onclick="openSidebar('60_Aqua, Keyblade Master',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\119_Closing The Door to Darkness.png" id="119_Closing The Door to Darkness" data-flag="@X" onclick="openSidebar('119_Closing The Door to Darkness',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\172_Birth of a Nobody.png" id="172_Birth of a Nobody" data-flag="@X" onclick="openSidebar('172_Birth of a Nobody',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\229_Blossom Shower.png" id="229_Blossom Shower" data-flag="@X" onclick="openSidebar('229_Blossom Shower',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\17_Kairi, Searching for Light.png" id="17_Kairi, Searching for Light" data-flag="@X" onclick="openSidebar('17_Kairi, Searching for Light',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\61_Barrier Master.png" id="61_Barrier Master" data-flag="@X" onclick="openSidebar('61_Barrier Master',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\124_Fragments of Sorrow.png" id="124_Fragments of Sorrow" data-flag="@X" onclick="openSidebar('124_Fragments of Sorrow',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\174_Burn Baby!.png" id="174_Burn Baby!" data-flag="@X" onclick="openSidebar('174_Burn Baby!',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\231_Braig, Tracking Destiny.png" id="231_Braig, Tracking Destiny" data-flag="@X" onclick="openSidebar('231_Braig, Tracking Destiny',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\19_Keyhole of Castle Oblivion.png" id="19_Keyhole of Castle Oblivion" data-flag="@X" onclick="openSidebar('19_Keyhole of Castle Oblivion',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\62_Blobmob.png" id="62_Blobmob" data-flag="@X" onclick="openSidebar('62_Blobmob',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\134_Keyhole of Hollow Bastion.png" id="134_Keyhole of Hollow Bastion" data-flag="@X" onclick="openSidebar('134_Keyhole of Hollow Bastion',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\181_Demyx. Melodious Nocturne.png" id="181_Demyx. Melodious Nocturne" data-flag="@X" onclick="openSidebar('181_Demyx. Melodious Nocturne',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\234_Chirithy.png" id="234_Chirithy" data-flag="@X" onclick="openSidebar('234_Chirithy',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\26_Mickey's Ulima Magic.png" id="26_Mickeys Ulima Magic" data-flag="@X" onclick="openSidebar('26_Mickeys Ulima Magic',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\68_Control of Darkness.png" id="68_Control of Darkness" data-flag="@X" onclick="openSidebar('68_Control of Darkness',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\137_Larxene, The Savage Ninja.png" id="137_Larxene, The Savage Ninja" data-flag="@X" onclick="openSidebar('137_Larxene, The Savage Ninja',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\184_Donald's Thunder Magic.png" id="184_Donalds Thunder Magic" data-flag="@X" onclick="openSidebar('184_Donalds Thunder Magic',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\242_Dual Stance.png" id="242_Dual Stance" data-flag="@X" onclick="openSidebar('242_Dual Stance',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\27_My Friends Are My Power!.png" id="27_My Friends Are My Power!" data-flag="@X" onclick="openSidebar('27_My Friends Are My Power!',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\72_DiZ.png" id="72_DiZ" data-flag="@X" onclick="openSidebar('72_DiZ',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\139_Machine At The End Of The World.png" id="139_Machine At The End Of The World" data-flag="@X" onclick="openSidebar('139_Machine At The End Of The World',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\195_Keyhole of Traverse Town.png" id="195_Keyhole of Traverse Town" data-flag="@X" onclick="openSidebar('195_Keyhole of Traverse Town',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\245_Foundations of the Past.png" id="245_Foundations of the Past" data-flag="@X" onclick="openSidebar('245_Foundations of the Past',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\34_Promise Charm.png" id="34_Promise Charm" data-flag="@X" onclick="openSidebar('34_Promise Charm',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\81_Isa, Cold as Night.png" id="81_Isa, Cold as Night" data-flag="@X" onclick="openSidebar('81_Isa, Cold as Night',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\141_Marluxia, The Graceful Assassin.png" id="141_Marluxia, The Graceful Assassin" data-flag="@X" onclick="openSidebar('141_Marluxia, The Graceful Assassin',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\196_King Mickey.png" id="196_King Mickey" data-flag="@X" onclick="openSidebar('196_King Mickey',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\246_Friends In My Heart.png" id="246_Friends In My Heart" data-flag="@X" onclick="openSidebar('246_Friends In My Heart',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\36_Reflega!.png" id="36_Reflega!" data-flag="@X" onclick="openSidebar('36_Reflega!',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\83_Keyhole of The Land of Departure.png" id="83_Keyhole of The Land of Departure" data-flag="@X" onclick="openSidebar('83_Keyhole of The Land of Departure',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\142_Master Xehanort.png" id="142_Master Xehanort" data-flag="@X" onclick="openSidebar('142_Master Xehanort',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\197_Lea, Burning Memory.png" id="197_Lea, Burning Memory" data-flag="@X" onclick="openSidebar('197_Lea, Burning Memory',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\247_Goofy, Royal Defender.png" id="247_Goofy, Royal Defender" data-flag="@X" onclick="openSidebar('247_Goofy, Royal Defender',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\39_Sora, Key to the Truth.png" id="39_Sora, Key to the Truth" data-flag="@X" onclick="openSidebar('39_Sora, Key to the Truth',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\91_Shadow Stalker.png" id="91_Shadow Stalker" data-flag="@X" onclick="openSidebar('91_Shadow Stalker',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\150_Nobody Sorcerer.png" id="150_Nobody Sorcerer" data-flag="@X" onclick="openSidebar('150_Nobody Sorcerer',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\198_Lexaeus, The Taciturn Stalwart.png" id="198_Lexaeus, The Taciturn Stalwart" data-flag="@X" onclick="openSidebar('198_Lexaeus, The Taciturn Stalwart',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\255_Keyhole of Destiny Islands.png" id="255_Keyhole of Destiny Islands" data-flag="@X" onclick="openSidebar('255_Keyhole of Destiny Islands',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\48_Summon Tinker Bell.png" id="48_Summon Tinker Bell" data-flag="@X" onclick="openSidebar('48_Summon Tinker Bell',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\94_Station of Sanctuary.png" id="94_Station of Sanctuary" data-flag="@X" onclick="openSidebar('94_Station of Sanctuary',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\152_The Other Promise.png" id="152_The Other Promise" data-flag="@X" onclick="openSidebar('152_The Other Promise',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\200_Luxord, The Gambler of Fate.png" id="200_Luxord, The Gambler of Fate" data-flag="@X" onclick="openSidebar('200_Luxord, The Gambler of Fate',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\256_Kurt Zisa.png" id="256_Kurt Zisa" data-flag="@X" onclick="openSidebar('256_Kurt Zisa',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\49_Summon Wreck-It Ralph.png" id="49_Summon Wreck-It Ralph" data-flag="@X" onclick="openSidebar('49_Summon Wreck-It Ralph',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\101_Terra-Xehanort, Vessel of Darkness.png" id="101_Terra-Xehanort, Vessel of Darkness" data-flag="@X" onclick="openSidebar('101_Terra-Xehanort, Vessel of Darkness',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\153_Parasol Beauty.png" id="153_Parasol Beauty" data-flag="@X" onclick="openSidebar('153_Parasol Beauty',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\205_Nobody Dragoon.png" id="205_Nobody Dragoon" data-flag="@X" onclick="openSidebar('205_Nobody Dragoon',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\268_Promises to Keep.png" id="268_Promises to Keep" data-flag="@X" onclick="openSidebar('268_Promises to Keep',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\52_Ultima Weapon Keyblade.png" id="52_Ultima Weapon Keyblade" data-flag="@X" onclick="openSidebar('52_Ultima Weapon Keyblade',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\103_Under The Sea.png" id="103_Under The Sea" data-flag="@X" onclick="openSidebar('103_Under The Sea',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\154_The Perfected Replica.png" id="154_The Perfected Replica" data-flag="@X" onclick="openSidebar('154_The Perfected Replica',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\213_Rumbling Rose.png" id="213_Rumbling Rose" data-flag="@X" onclick="openSidebar('213_Rumbling Rose',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\272_Spiked Crawler.png" id="272_Spiked Crawler" data-flag="@X" onclick="openSidebar('272_Spiked Crawler',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\2_Chef Kyroo.png" id="2_Chef Kyroo" data-flag="@X" onclick="openSidebar('2_Chef Kyroo',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\106_Xehanort's Command.png" id="106_Xehanorts Command" data-flag="@X" onclick="openSidebar('106_Xehanorts Command',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\155_The Realm of Darkness.png" id="155_The Realm of Darkness" data-flag="@X" onclick="openSidebar('155_The Realm of Darkness',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\214_Saïx, The Luna Diviner.png" id="214_Saïx, The Luna Diviner" data-flag="@X" onclick="openSidebar('214_Saïx, The Luna Diviner',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\273_Tifa Lockhart.png" id="273_Tifa Lockhart" data-flag="@X" onclick="openSidebar('273_Tifa Lockhart',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\7_Flash Step.png" id="7_Flash Step" data-flag="@X" onclick="openSidebar('7_Flash Step',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\108_Young Master Xehanort.png" id="108_Young Master Xehanort" data-flag="@X" onclick="openSidebar('108_Young Master Xehanort',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\162_Unknown.png" id="162_Unknown" data-flag="@X" onclick="openSidebar('162_Unknown',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\216_Terra, Earthshaker.png" id="216_Terra, Earthshaker" data-flag="@X" onclick="openSidebar('216_Terra, Earthshaker',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\279_Withstand Combo.png" id="279_Withstand Combo" data-flag="@X" onclick="openSidebar('279_Withstand Combo',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\9_Gull Wing.png" id="9_Gull Wing" data-flag="@X" onclick="openSidebar('9_Gull Wing',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\109_Yozora, Verum Rex.png" id="109_Yozora, Verum Rex" data-flag="@X" onclick="openSidebar('109_Yozora, Verum Rex',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\164_Vanitas, Heart of Darkness.png" id="164_Vanitas, Heart of Darkness" data-flag="@X" onclick="openSidebar('164_Vanitas, Heart of Darkness',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\219_Ventus, Awoken Wielder.png" id="219_Ventus, Awoken Wielder" data-flag="@X" onclick="openSidebar('219_Ventus, Awoken Wielder',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\230_Bouncywild.png" id="230_Bouncywild" data-flag="@X" onclick="openSidebar('230_Bouncywild',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\10_Heal!.png" id="10_Heal!" data-flag="@X" onclick="openSidebar('10_Heal!',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\55_Air Battler.png" id="55_Air Battler" data-flag="@X" onclick="openSidebar('55_Air Battler',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\167_Xion, Organization's Puppet.png" id="167_Xion, Organizations Puppet" data-flag="@X" onclick="openSidebar('167_Xion, Organizations Puppet',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\220_Vexen, the Chilly Academic.png" id="220_Vexen, the Chilly Academic" data-flag="@X" onclick="openSidebar('220_Vexen, the Chilly Academic',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\232_Chaos Carriage.png" id="232_Chaos Carriage" data-flag="@X" onclick="openSidebar('232_Chaos Carriage',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\11_Heartbinder.png" id="11_Heartbinder" data-flag="@X" onclick="openSidebar('11_Heartbinder',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\65_Chain of Memories.png" id="65_Chain of Memories" data-flag="@X" onclick="openSidebar('65_Chain of Memories',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\120_Darkside Destruction.png" id="120_Darkside Destruction" data-flag="@X" onclick="openSidebar('120_Darkside Destruction',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\170_Axel, The Flurry of Dancing Flames.png" id="170_Axel, The Flurry of Dancing Flames" data-flag="@X" onclick="openSidebar('170_Axel, The Flurry of Dancing Flames',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\235_Circle of Life.png" id="235_Circle of Life" data-flag="@X" onclick="openSidebar('235_Circle of Life',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\16_Kairi, Princess of Heart.png" id="16_Kairi, Princess of Heart" data-flag="@X" onclick="openSidebar('16_Kairi, Princess of Heart',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\67_Commantis.png" id="67_Commantis" data-flag="@X" onclick="openSidebar('67_Commantis',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\122_Dismiss of Darkness.png" id="122_Dismiss of Darkness" data-flag="@X" onclick="openSidebar('122_Dismiss of Darkness',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\176_Crimson Jazz.png" id="176_Crimson Jazz" data-flag="@X" onclick="openSidebar('176_Crimson Jazz',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\237_Creeper Plant.png" id="237_Creeper Plant" data-flag="@X" onclick="openSidebar('237_Creeper Plant',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\18_Keeba Tiger.png" id="18_Keeba Tiger" data-flag="@X" onclick="openSidebar('18_Keeba Tiger',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\69_Data Transfer.png" id="69_Data Transfer" data-flag="@X" onclick="openSidebar('69_Data Transfer',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\123_Dive to Heart.png" id="123_Dive to Heart" data-flag="@X" onclick="openSidebar('123_Dive to Heart',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\178_Darkness of the Unknown.png" id="178_Darkness of the Unknown" data-flag="@X" onclick="openSidebar('178_Darkness of the Unknown',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\238_Day 224 — Anomaly.png" id="238_Day 224 — Anomaly" data-flag="@X" onclick="openSidebar('238_Day 224 — Anomaly',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\20_Kingdom Hearts.png" id="20_Kingdom Hearts" data-flag="@X" onclick="openSidebar('20_Kingdom Hearts',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\74_Gummi Route Dispute.png" id="74_Gummi Route Dispute" data-flag="@X" onclick="openSidebar('74_Gummi Route Dispute',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\125_Guardian Soul.png" id="125_Guardian Soul" data-flag="@X" onclick="openSidebar('125_Guardian Soul',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\179_Day 298 — Fracture.png" id="179_Day 298 — Fracture" data-flag="@X" onclick="openSidebar('179_Day 298 — Fracture',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\239_Day 277 — Searching.png" id="239_Day 277 — Searching" data-flag="@X" onclick="openSidebar('239_Day 277 — Searching',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\22_Komory Bat.png" id="22_Komory Bat" data-flag="@X" onclick="openSidebar('22_Komory Bat',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\77_Hook Bat.png" id="77_Hook Bat" data-flag="@X" onclick="openSidebar('77_Hook Bat',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\127_Heartless Behemoth.png" id="127_Heartless Behemoth" data-flag="@X" onclick="openSidebar('127_Heartless Behemoth',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\183_Donald Duck, Court Wizard.png" id="183_Donald Duck, Court Wizard" data-flag="@X" onclick="openSidebar('183_Donald Duck, Court Wizard',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\240_Decisive Pumpkin.png" id="240_Decisive Pumpkin" data-flag="@X" onclick="openSidebar('240_Decisive Pumpkin',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\25_Light of Remind.png" id="25_Light of Remind" data-flag="@X" onclick="openSidebar('25_Light of Remind',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\78_Hot Rod.png" id="78_Hot Rod" data-flag="@X" onclick="openSidebar('78_Hot Rod',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\128_Heartless Edict.png" id="128_Heartless Edict" data-flag="@X" onclick="openSidebar('128_Heartless Edict',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\185_Fat Bandit.png" id="185_Fat Bandit" data-flag="@X" onclick="openSidebar('185_Fat Bandit',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\241_Demon Tide.png" id="241_Demon Tide" data-flag="@X" onclick="openSidebar('241_Demon Tide',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\28_Necho Cat.png" id="28_Necho Cat" data-flag="@X" onclick="openSidebar('28_Necho Cat',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\80_Into the 100 Acre Wood.png" id="80_Into the 100 Acre Wood" data-flag="@X" onclick="openSidebar('80_Into the 100 Acre Wood',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\133_Heartless Wizard.png" id="133_Heartless Wizard" data-flag="@X" onclick="openSidebar('133_Heartless Wizard',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\186_Fatal Crest.png" id="186_Fatal Crest" data-flag="@X" onclick="openSidebar('186_Fatal Crest',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\244_Final Chapter Prologue.png" id="244_Final Chapter Prologue" data-flag="@X" onclick="openSidebar('244_Final Chapter Prologue',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\29_Oathkeeper, Charm of Promise.png" id="29_Oathkeeper, Charm of Promise" data-flag="@X" onclick="openSidebar('29_Oathkeeper, Charm of Promise',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\84_Kooma Panda.png" id="84_Kooma Panda" data-flag="@X" onclick="openSidebar('84_Kooma Panda',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\135_Kingdom Key D.png" id="135_Kingdom Key D" data-flag="@X" onclick="openSidebar('135_Kingdom Key D',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\187_Fenrir.png" id="187_Fenrir" data-flag="@X" onclick="openSidebar('187_Fenrir',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\250_Heartless Defender.png" id="250_Heartless Defender" data-flag="@X" onclick="openSidebar('250_Heartless Defender',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\31_Organization XIII Moogle.png" id="31_Organization XIII Moogle" data-flag="@X" onclick="openSidebar('31_Organization XIII Moogle',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\90_Searching The Other Side.png" id="90_Searching The Other Side" data-flag="@X" onclick="openSidebar('90_Searching The Other Side',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\138_Lunar Eclipse.png" id="138_Lunar Eclipse" data-flag="@X" onclick="openSidebar('138_Lunar Eclipse',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\188_Fire!.png" id="188_Fire!" data-flag="@X" onclick="openSidebar('188_Fire!',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\252_Heartless Satyr.png" id="252_Heartless Satyr" data-flag="@X" onclick="openSidebar('252_Heartless Satyr',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\32_Photon Debugger.png" id="32_Photon Debugger" data-flag="@X" onclick="openSidebar('32_Photon Debugger',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\96_Summon Ariel.png" id="96_Summon Ariel" data-flag="@X" onclick="openSidebar('96_Summon Ariel',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\143_Monochrome.png" id="143_Monochrome" data-flag="@X" onclick="openSidebar('143_Monochrome',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\193_Hero's Crest.png" id="193_Heros Crest" data-flag="@X" onclick="openSidebar('193_Heros Crest',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\259_Lion Form.png" id="259_Lion Form" data-flag="@X" onclick="openSidebar('259_Lion Form',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\40_Sora, Keyblade's Chosen.png" id="40_Sora, Keyblades Chosen" data-flag="@X" onclick="openSidebar('40_Sora, Keyblades Chosen',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\98_Summon Genie.png" id="98_Summon Genie" data-flag="@X" onclick="openSidebar('98_Summon Genie',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\148_Nobody Ninja.png" id="148_Nobody Ninja" data-flag="@X" onclick="openSidebar('148_Nobody Ninja',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\203_Nobody Assassin.png" id="203_Nobody Assassin" data-flag="@X" onclick="openSidebar('203_Nobody Assassin',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\260_Organization Resignation.png" id="260_Organization Resignation" data-flag="@X" onclick="openSidebar('260_Organization Resignation',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\43_Star Seeker.png" id="43_Star Seeker" data-flag="@X" onclick="openSidebar('43_Star Seeker',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\99_Summon Mushu.png" id="99_Summon Mushu" data-flag="@X" onclick="openSidebar('99_Summon Mushu',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\149_Nobody Reaper.png" id="149_Nobody Reaper" data-flag="@X" onclick="openSidebar('149_Nobody Reaper',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\206_Nobody Gambler.png" id="206_Nobody Gambler" data-flag="@X" onclick="openSidebar('206_Nobody Gambler',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\261_Paopu Fruit Promise.png" id="261_Paopu Fruit Promise" data-flag="@X" onclick="openSidebar('261_Paopu Fruit Promise',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\44_Sudo Neko.png" id="44_Sudo Neko" data-flag="@X" onclick="openSidebar('44_Sudo Neko',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\100_Summon Stitch.png" id="100_Summon Stitch" data-flag="@X" onclick="openSidebar('100_Summon Stitch',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\151_Ominous Blight.png" id="151_Ominous Blight" data-flag="@X" onclick="openSidebar('151_Ominous Blight',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\209_Oblivion, Passing Memories.png" id="209_Oblivion, Passing Memories" data-flag="@X" onclick="openSidebar('209_Oblivion, Passing Memories',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\263_Pluto, Royal Companion.png" id="263_Pluto, Royal Companion" data-flag="@X" onclick="openSidebar('263_Pluto, Royal Companion',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\50_Tama Sheep.png" id="50_Tama Sheep" data-flag="@X" onclick="openSidebar('50_Tama Sheep',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\102_Thirst for Recognition.png" id="102_Thirst for Recognition" data-flag="@X" onclick="openSidebar('102_Thirst for Recognition',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\156_Saved by Mickey.png" id="156_Saved by Mickey" data-flag="@X" onclick="openSidebar('156_Saved by Mickey',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\211_Rejection of Fate.png" id="211_Rejection of Fate" data-flag="@X" onclick="openSidebar('211_Rejection of Fate',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\265_Pot Scorpion.png" id="265_Pot Scorpion" data-flag="@X" onclick="openSidebar('265_Pot Scorpion',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\5_Day 354 — Truth.png" id="5_Day 354 — Truth" data-flag="@X" onclick="openSidebar('5_Day 354 — Truth',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\104_A Very Merry Unbirthday.png" id="104_A Very Merry Unbirthday" data-flag="@X" onclick="openSidebar('104_A Very Merry Unbirthday',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\160_Toy Soldier.png" id="160_Toy Soldier" data-flag="@X" onclick="openSidebar('160_Toy Soldier',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\212_Reverse Rebirth.png" id="212_Reverse Rebirth" data-flag="@X" onclick="openSidebar('212_Reverse Rebirth',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\270_Rowdy Rumble.png" id="270_Rowdy Rumble" data-flag="@X" onclick="openSidebar('270_Rowdy Rumble',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\6_Destiny Islands Trio.png" id="6_Destiny Islands Trio" data-flag="@X" onclick="openSidebar('6_Destiny Islands Trio',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\105_Water Core.png" id="105_Water Core" data-flag="@X" onclick="openSidebar('105_Water Core',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\163_Unversed Bruiser.png" id="163_Unversed Bruiser" data-flag="@X" onclick="openSidebar('163_Unversed Bruiser',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\221_Wishing Lamp.png" id="221_Wishing Lamp" data-flag="@X" onclick="openSidebar('221_Wishing Lamp',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\274_Twilight Town Mansion.png" id="274_Twilight Town Mansion" data-flag="@X" onclick="openSidebar('274_Twilight Town Mansion',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\8_Follow the Wind.png" id="8_Follow the Wind" data-flag="@X" onclick="openSidebar('8_Follow the Wind',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\110_Zip Slasher.png" id="110_Zip Slasher" data-flag="@X" onclick="openSidebar('110_Zip Slasher',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\165_Way to the Dawn.png" id="165_Way to the Dawn" data-flag="@X" onclick="openSidebar('165_Way to the Dawn',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\222_Worthy to Wield.png" id="222_Worthy to Wield" data-flag="@X" onclick="openSidebar('222_Worthy to Wield',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\226_Assault Rider.png" id="226_Assault Rider" data-flag="@X" onclick="openSidebar('226_Assault Rider',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\12_Hockomonkey.png" id="12_Hockomonkey" data-flag="@X" onclick="openSidebar('12_Hockomonkey',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\56_Anguis Wielder.png" id="56_Anguis Wielder" data-flag="@X" onclick="openSidebar('56_Anguis Wielder',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\166_Wight Knight.png" id="166_Wight Knight" data-flag="@X" onclick="openSidebar('166_Wight Knight',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\223_Xehanort's Influence.png" id="223_Xehanorts Influence" data-flag="@X" onclick="openSidebar('223_Xehanorts Influence',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\228_Bizzare Archer.png" id="228_Bizzare Archer" data-flag="@X" onclick="openSidebar('228_Bizzare Archer',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\13_Holey Moley.png" id="13_Holey Moley" data-flag="@X" onclick="openSidebar('13_Holey Moley',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\63_Blue Rhapsody.png" id="63_Blue Rhapsody" data-flag="@X" onclick="openSidebar('63_Blue Rhapsody',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\111_Bargain of Darkness.png" id="111_Bargain of Darkness" data-flag="@X" onclick="openSidebar('111_Bargain of Darkness',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\169_Arabian Dream.png" id="169_Arabian Dream" data-flag="@X" onclick="openSidebar('169_Arabian Dream',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\233_Chief Puff.png" id="233_Chief Puff" data-flag="@X" onclick="openSidebar('233_Chief Puff',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\21_Kingdom Key.png" id="21_Kingdom Key" data-flag="@X" onclick="openSidebar('21_Kingdom Key',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\64_Card Break.png" id="64_Card Break" data-flag="@X" onclick="openSidebar('64_Card Break',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\112_Barrel Spider.png" id="112_Barrel Spider" data-flag="@X" onclick="openSidebar('112_Barrel Spider',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\173_Bond of Flame.png" id="173_Bond of Flame" data-flag="@X" onclick="openSidebar('173_Bond of Flame',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\236_Commune with the Composer.png" id="236_Commune with the Composer" data-flag="@X" onclick="openSidebar('236_Commune with the Composer',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\23_Leopardos Wielder.png" id="23_Leopardos Wielder" data-flag="@X" onclick="openSidebar('23_Leopardos Wielder',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\66_Combat Tutorial.png" id="66_Combat Tutorial" data-flag="@X" onclick="openSidebar('66_Combat Tutorial',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\115_Black Coat of Organization XIII.png" id="115_Black Coat of Organization XIII" data-flag="@X" onclick="openSidebar('115_Black Coat of Organization XIII',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\175_Cid's Virus Program.png" id="175_Cids Virus Program" data-flag="@X" onclick="openSidebar('175_Cids Virus Program',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\243_Earth Core.png" id="243_Earth Core" data-flag="@X" onclick="openSidebar('243_Earth Core',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\24_Light, Give Me Strength!.png" id="24_Light, Give Me Strength!" data-flag="@X" onclick="openSidebar('24_Light, Give Me Strength!',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\71_Deep Freeze!.png" id="71_Deep Freeze!" data-flag="@X" onclick="openSidebar('71_Deep Freeze!',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\116_Black Fungus.png" id="116_Black Fungus" data-flag="@X" onclick="openSidebar('116_Black Fungus',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\177_Crown of Guilt.png" id="177_Crown of Guilt" data-flag="@X" onclick="openSidebar('177_Crown of Guilt',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\251_Heartless Gargoyle Warrior.png" id="251_Heartless Gargoyle Warrior" data-flag="@X" onclick="openSidebar('251_Heartless Gargoyle Warrior',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\30_Omega Weapon.png" id="30_Omega Weapon" data-flag="@X" onclick="openSidebar('30_Omega Weapon',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\73_Guard Armor.png" id="73_Guard Armor" data-flag="@X" onclick="openSidebar('73_Guard Armor',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\117_Bulky Vendor.png" id="117_Bulky Vendor" data-flag="@X" onclick="openSidebar('117_Bulky Vendor',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\180_Defending Hollow Bastion.png" id="180_Defending Hollow Bastion" data-flag="@X" onclick="openSidebar('180_Defending Hollow Bastion',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\253_Hero's Blessing.png" id="253_Heros Blessing" data-flag="@X" onclick="openSidebar('253_Heros Blessing',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\33_Pricklemane.png" id="33_Pricklemane" data-flag="@X" onclick="openSidebar('33_Pricklemane',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\75_Heartless Battleship.png" id="75_Heartless Battleship" data-flag="@X" onclick="openSidebar('75_Heartless Battleship',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\121_Day 359 — The First Day.png" id="121_Day 359 — The First Day" data-flag="@X" onclick="openSidebar('121_Day 359 — The First Day',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\189_Flame Core.png" id="189_Flame Core" data-flag="@X" onclick="openSidebar('189_Flame Core',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\254_Journal of Travelled Lands.png" id="254_Journal of Travelled Lands" data-flag="@X" onclick="openSidebar('254_Journal of Travelled Lands',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\35_Rabid Dog Heartless.png" id="35_Rabid Dog Heartless" data-flag="@X" onclick="openSidebar('35_Rabid Dog Heartless',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\76_Heartless Gargoyle.png" id="76_Heartless Gargoyle" data-flag="@X" onclick="openSidebar('76_Heartless Gargoyle',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\126_Gummi Ship Shortcut.png" id="126_Gummi Ship Shortcut" data-flag="@X" onclick="openSidebar('126_Gummi Ship Shortcut',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\190_Hammer Frame.png" id="190_Hammer Frame" data-flag="@X" onclick="openSidebar('190_Hammer Frame',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\257_Lance Soldier.png" id="257_Lance Soldier" data-flag="@X" onclick="openSidebar('257_Lance Soldier',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\37_Sea-Salt Ice Cream.png" id="37_Sea-Salt Ice Cream" data-flag="@X" onclick="openSidebar('37_Sea-Salt Ice Cream',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\79_Icy Cube.png" id="79_Icy Cube" data-flag="@X" onclick="openSidebar('79_Icy Cube',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\130_Heartless Neoshadow.png" id="130_Heartless Neoshadow" data-flag="@X" onclick="openSidebar('130_Heartless Neoshadow',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\191_Heartless Shaman.png" id="191_Heartless Shaman" data-flag="@X" onclick="openSidebar('191_Heartless Shaman',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\258_Lazy Afternoons.png" id="258_Lazy Afternoons" data-flag="@X" onclick="openSidebar('258_Lazy Afternoons',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\38_Sleeping Lion.png" id="38_Sleeping Lion" data-flag="@X" onclick="openSidebar('38_Sleeping Lion',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\82_Jiminy Cricket, Journal Author.png" id="82_Jiminy Cricket, Journal Author" data-flag="@X" onclick="openSidebar('82_Jiminy Cricket, Journal Author',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\131_Heartless Pirate.png" id="131_Heartless Pirate" data-flag="@X" onclick="openSidebar('131_Heartless Pirate',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\192_Heartless Wyvern.png" id="192_Heartless Wyvern" data-flag="@X" onclick="openSidebar('192_Heartless Wyvern',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\262_Pink Agaricus.png" id="262_Pink Agaricus" data-flag="@X" onclick="openSidebar('262_Pink Agaricus',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\42_Sora's Sleeping Pod.png" id="42_Soras Sleeping Pod" data-flag="@X" onclick="openSidebar('42_Soras Sleeping Pod',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\85_Nobody Memories.png" id="85_Nobody Memories" data-flag="@X" onclick="openSidebar('85_Nobody Memories',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\132_Heartless Shadow.png" id="132_Heartless Shadow" data-flag="@X" onclick="openSidebar('132_Heartless Shadow',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\194_Hidden Dragon.png" id="194_Hidden Dragon" data-flag="@X" onclick="openSidebar('194_Hidden Dragon',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\264_Popcat.png" id="264_Popcat" data-flag="@X" onclick="openSidebar('264_Popcat',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\45_Summon Chicken Little.png" id="45_Summon Chicken Little" data-flag="@X" onclick="openSidebar('45_Summon Chicken Little',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\86_R & R Seal.png" id="86_R & R Seal" data-flag="@X" onclick="openSidebar('86_R & R Seal',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\136_Large Body.png" id="136_Large Body" data-flag="@X" onclick="openSidebar('136_Large Body',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\199_Luna Bandit.png" id="199_Luna Bandit" data-flag="@X" onclick="openSidebar('199_Luna Bandit',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\266_Powerwild.png" id="266_Powerwild" data-flag="@X" onclick="openSidebar('266_Powerwild',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\46_Summon Meow Wow.png" id="46_Summon Meow Wow" data-flag="@X" onclick="openSidebar('46_Summon Meow Wow',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\87_Ready to Fight.png" id="87_Ready to Fight" data-flag="@X" onclick="openSidebar('87_Ready to Fight',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\140_Maleficent's Darkness.png" id="140_Maleficents Darkness" data-flag="@X" onclick="openSidebar('140_Maleficents Darkness',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\201_Minute Bomb.png" id="201_Minute Bomb" data-flag="@X" onclick="openSidebar('201_Minute Bomb',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\267_Pressed for Time.png" id="267_Pressed for Time" data-flag="@X" onclick="openSidebar('267_Pressed for Time',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\47_Summon Simba.png" id="47_Summon Simba" data-flag="@X" onclick="openSidebar('47_Summon Simba',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\88_Screwdiver.png" id="88_Screwdiver" data-flag="@X" onclick="openSidebar('88_Screwdiver',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\144_Night of Fate.png" id="144_Night of Fate" data-flag="@X" onclick="openSidebar('144_Night of Fate',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\202_Naminé, Memory Distorter.png" id="202_Naminé, Memory Distorter" data-flag="@X" onclick="openSidebar('202_Naminé, Memory Distorter',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\269_Ray of Hope.png" id="269_Ray of Hope" data-flag="@X" onclick="openSidebar('269_Ray of Hope',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\51_Trick Ghost.png" id="51_Trick Ghost" data-flag="@X" onclick="openSidebar('51_Trick Ghost',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\89_Search Ghost.png" id="89_Search Ghost" data-flag="@X" onclick="openSidebar('89_Search Ghost',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\145_Nobody Berserker.png" id="145_Nobody Berserker" data-flag="@X" onclick="openSidebar('145_Nobody Berserker',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\204_Nobody Dancer.png" id="204_Nobody Dancer" data-flag="@X" onclick="openSidebar('204_Nobody Dancer',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\271_Sea-Salt Trio.png" id="271_Sea-Salt Trio" data-flag="@X" onclick="openSidebar('271_Sea-Salt Trio',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\53_Unversed Symphony.png" id="53_Unversed Symphony" data-flag="@X" onclick="openSidebar('53_Unversed Symphony',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\92_Sign of Innocence.png" id="92_Sign of Innocence" data-flag="@X" onclick="openSidebar('92_Sign of Innocence',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\146_Nobody Creeper.png" id="146_Nobody Creeper" data-flag="@X" onclick="openSidebar('146_Nobody Creeper',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\207_Nobody Samurai.png" id="207_Nobody Samurai" data-flag="@X" onclick="openSidebar('207_Nobody Samurai',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\275_Unversed Flood.png" id="275_Unversed Flood" data-flag="@X" onclick="openSidebar('275_Unversed Flood',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\54_Visit To The Final World.png" id="54_Visit To The Final World" data-flag="@X" onclick="openSidebar('54_Visit To The Final World',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\93_Staggerceps.png" id="93_Staggerceps" data-flag="@X" onclick="openSidebar('93_Staggerceps',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\147_Nobody Dusk.png" id="147_Nobody Dusk" data-flag="@X" onclick="openSidebar('147_Nobody Dusk',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\208_Nobody Sniper.png" id="208_Nobody Sniper" data-flag="@X" onclick="openSidebar('208_Nobody Sniper',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\276_Unversed Mandrake.png" id="276_Unversed Mandrake" data-flag="@X" onclick="openSidebar('276_Unversed Mandrake',false)"></div>
+				<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\95_Stored in Data.png" id="95_Stored in Data" data-flag="@X" onclick="openSidebar('95_Stored in Data',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\157_Shrouding Dark Cloud.png" id="157_Shrouding Dark Cloud" data-flag="@X" onclick="openSidebar('157_Shrouding Dark Cloud',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\210_Organization XIII Mission.png" id="210_Organization XIII Mission" data-flag="@X" onclick="openSidebar('210_Organization XIII Mission',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\277_Unversed Scrapper.png" id="277_Unversed Scrapper" data-flag="@X" onclick="openSidebar('277_Unversed Scrapper',false)"></div>
+				<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\97_Summon Dumbo.png" id="97_Summon Dumbo" data-flag="@X" onclick="openSidebar('97_Summon Dumbo',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\158_Succumb to Darkness.png" id="158_Succumb to Darkness" data-flag="@X" onclick="openSidebar('158_Succumb to Darkness',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\215_Struggle Panic.png" id="215_Struggle Panic" data-flag="@X" onclick="openSidebar('215_Struggle Panic',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\278_Vulpes Wielder.png" id="278_Vulpes Wielder" data-flag="@X" onclick="openSidebar('278_Vulpes Wielder',false)"></div>
+				<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\107_Yoggy Ram.png" id="107_Yoggy Ram" data-flag="@X" onclick="openSidebar('107_Yoggy Ram',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\159_Thirst Of The Darkling's.png" id="159_Thirst Of The Darklings" data-flag="@X" onclick="openSidebar('159_Thirst Of The Darklings',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\217_Thunder!.png" id="217_Thunder!" data-flag="@X" onclick="openSidebar('217_Thunder!',false)"></div>
+				<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+				<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+				<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\161_Unicornis Wielder.png" id="161_Unicornis Wielder" data-flag="@X" onclick="openSidebar('161_Unicornis Wielder',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\218_Ursus Wielder.png" id="218_Ursus Wielder" data-flag="@X" onclick="openSidebar('218_Ursus Wielder',false)"></div>
+				<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+				<div id="gold" class="anchor"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\281_Glimmering Garments.png" id="281_Glimmering Garments" data-flag="@X" onclick="openSidebar('281_Glimmering Garments',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\283_Ansem, Seeker of Darkness.png" id="283_Ansem, Seeker of Darkness" data-flag="@X" onclick="openSidebar('283_Ansem, Seeker of Darkness',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\287_Organization XIII.png" id="287_Organization XIII" data-flag="@X" onclick="openSidebar('287_Organization XIII',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\291_Dual Wield.png" id="291_Dual Wield" data-flag="@X" onclick="openSidebar('291_Dual Wield',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\294_Chip and Dale, Gummi Mechanics.png" id="294_Chip and Dale, Gummi Mechanics" data-flag="@X" onclick="openSidebar('294_Chip and Dale, Gummi Mechanics',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\280_Dream Drop Distance.png" id="280_Dream Drop Distance" data-flag="@X" onclick="openSidebar('280_Dream Drop Distance',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\284_Crescendo.png" id="284_Crescendo" data-flag="@X" onclick="openSidebar('284_Crescendo',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\289_Xaldin, the Whirlwind Lancer.png" id="289_Xaldin, the Whirlwind Lancer" data-flag="@X" onclick="openSidebar('289_Xaldin, the Whirlwind Lancer',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\292_Post Mission Debrief.png" id="292_Post Mission Debrief" data-flag="@X" onclick="openSidebar('292_Post Mission Debrief',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\295_Cornerstone of Light.png" id="295_Cornerstone of Light" data-flag="@X" onclick="openSidebar('295_Cornerstone of Light',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\282_Summon Bambi.png" id="282_Summon Bambi" data-flag="@X" onclick="openSidebar('282_Summon Bambi',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\285_Leechgrave.png" id="285_Leechgrave" data-flag="@X" onclick="openSidebar('285_Leechgrave',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\290_Xemnas, Superior of the In-Between.png" id="290_Xemnas, Superior of the In-Between" data-flag="@X" onclick="openSidebar('290_Xemnas, Superior of the In-Between',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\293_Replica's Sacrifice.png" id="293_Replicas Sacrifice" data-flag="@X" onclick="openSidebar('293_Replicas Sacrifice',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\296_Light of Destruction.png" id="296_Light of Destruction" data-flag="@X" onclick="openSidebar('296_Light of Destruction',false)"></div>
+				<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+				<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\286_End of the World.png" id="286_End of the World" data-flag="@X" onclick="openSidebar('286_End of the World',false)"></div>
+				<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+				<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+				<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+				<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\288_Twilight Thorn.png" id="288_Twilight Thorn" data-flag="@X" onclick="openSidebar('288_Twilight Thorn',false)"></div>
+				<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+				<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\298_Riku, Battling Inner Darkness.png" id="298_Riku, Battling Inner Darkness" data-flag="@X" onclick="openSidebar('298_Riku, Battling Inner Darkness',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\301_Ephemer, Light of the Past.png" id="301_Ephemer, Light of the Past" data-flag="@X" onclick="openSidebar('301_Ephemer, Light of the Past',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\304_Darkside.png" id="304_Darkside" data-flag="@X" onclick="openSidebar('304_Darkside',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\307_Riku, Seeker of Worlds.png" id="307_Riku, Seeker of Worlds" data-flag="@X" onclick="openSidebar('307_Riku, Seeker of Worlds',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\311_Face my Fears.png" id="311_Face my Fears" data-flag="@X" onclick="openSidebar('311_Face my Fears',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\297_Heartless Manufactory.png" id="297_Heartless Manufactory" data-flag="@X" onclick="openSidebar('297_Heartless Manufactory',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\302_Skuld, Hopeful Dandelion.png" id="302_Skuld, Hopeful Dandelion" data-flag="@X" onclick="openSidebar('302_Skuld, Hopeful Dandelion',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\305_Replica Program.png" id="305_Replica Program" data-flag="@X" onclick="openSidebar('305_Replica Program',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\308_Roxas, Key of Destiny.png" id="308_Roxas, Key of Destiny" data-flag="@X" onclick="openSidebar('308_Roxas, Key of Destiny',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\312_The Gummi Ship.png" id="312_The Gummi Ship" data-flag="@X" onclick="openSidebar('312_The Gummi Ship',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\299_The Twilight Road to Dawn.png" id="299_The Twilight Road to Dawn" data-flag="@X" onclick="openSidebar('299_The Twilight Road to Dawn',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\303_Strelitzia, the Missing Sister.png" id="303_Strelitzia, the Missing Sister" data-flag="@X" onclick="openSidebar('303_Strelitzia, the Missing Sister',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\306_Salvaged From Darkness.png" id="306_Salvaged From Darkness" data-flag="@X" onclick="openSidebar('306_Salvaged From Darkness',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\309_Twilight Blaze.png" id="309_Twilight Blaze" data-flag="@X" onclick="openSidebar('309_Twilight Blaze',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\313_Stealth Sneak.png" id="313_Stealth Sneak" data-flag="@X" onclick="openSidebar('313_Stealth Sneak',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\300_Two Become One.png" id="300_Two Become One" data-flag="@X" onclick="openSidebar('300_Two Become One',false)"></div>
+				<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+				<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\310_Unchained Weilder.png" id="310_Unchained Weilder" data-flag="@X" onclick="openSidebar('310_Unchained Weilder',false)"></div>
+				<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\314_Master Eraqus.png" id="314_Master Eraqus" data-flag="@X" onclick="openSidebar('314_Master Eraqus',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\315_The Master of Masters.png" id="315_The Master of Masters" data-flag="@X" onclick="openSidebar('315_The Master of Masters',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\316_Riku, Keyblade Master.png" id="316_Riku, Keyblade Master" data-flag="@X" onclick="openSidebar('316_Riku, Keyblade Master',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\317_Xigbar, the Free Shooter.png" id="317_Xigbar, the Free Shooter" data-flag="@X" onclick="openSidebar('317_Xigbar, the Free Shooter',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\318_Zexion, The Cloaked Schemer.png" id="318_Zexion, The Cloaked Schemer" data-flag="@X" onclick="openSidebar('318_Zexion, The Cloaked Schemer',false)"></div>
+				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+				<div id="colorless" class="anchor"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\1_Lingering Will.png" id="1_Lingering Will" data-flag="@X" onclick="openSidebar('1_Lingering Will',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\320_Roaming Throne.png" id="320_Roaming Throne" data-flag="@X" onclick="openSidebar('320_Roaming Throne',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\321_Soul Eater, Sword of Darkness.png" id="321_Soul Eater, Sword of Darkness" data-flag="@X" onclick="openSidebar('321_Soul Eater, Sword of Darkness',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\322_Talisman of Conviction.png" id="322_Talisman of Conviction" data-flag="@X" onclick="openSidebar('322_Talisman of Conviction',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\323_Talisman of Creativity.png" id="323_Talisman of Creativity" data-flag="@X" onclick="openSidebar('323_Talisman of Creativity',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\324_Talisman of Curiosity.png" id="324_Talisman of Curiosity" data-flag="@X" onclick="openSidebar('324_Talisman of Curiosity',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\325_Talisman of Dominance.png" id="325_Talisman of Dominance" data-flag="@X" onclick="openSidebar('325_Talisman of Dominance',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\326_Talisman of Hierarchy.png" id="326_Talisman of Hierarchy" data-flag="@X" onclick="openSidebar('326_Talisman of Hierarchy',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\327_Talisman of Impulse.png" id="327_Talisman of Impulse" data-flag="@X" onclick="openSidebar('327_Talisman of Impulse',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\328_Talisman of Indulgence.png" id="328_Talisman of Indulgence" data-flag="@X" onclick="openSidebar('328_Talisman of Indulgence',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\329_Talisman of Progress.png" id="329_Talisman of Progress" data-flag="@X" onclick="openSidebar('329_Talisman of Progress',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\330_Talisman of Resilience.png" id="330_Talisman of Resilience" data-flag="@X" onclick="openSidebar('330_Talisman of Resilience',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\331_Talisman of Unity.png" id="331_Talisman of Unity" data-flag="@X" onclick="openSidebar('331_Talisman of Unity',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\319_Orichalcum +.png" id="319_Orichalcum +" data-flag="@X" onclick="openSidebar('319_Orichalcum +',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\332_World Map.png" id="332_World Map" data-flag="@X" onclick="openSidebar('332_World Map',false)"></div>
+				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+				<div id="land" class="anchor"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\339_Disney Castle.png" id="339_Disney Castle" data-flag="@X" onclick="openSidebar('339_Disney Castle',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\338_Destiny Islands.png" id="338_Destiny Islands" data-flag="@X" onclick="openSidebar('338_Destiny Islands',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\341_Hollow Bastion.png" id="341_Hollow Bastion" data-flag="@X" onclick="openSidebar('341_Hollow Bastion',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\342_Keyblade Graveyard.png" id="342_Keyblade Graveyard" data-flag="@X" onclick="openSidebar('342_Keyblade Graveyard',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\347_Radiant Garden.png" id="347_Radiant Garden" data-flag="@X" onclick="openSidebar('347_Radiant Garden',false)"></div>
+				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\335_Atlantica.png" id="335_Atlantica" data-flag="@X" onclick="openSidebar('335_Atlantica',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\336_Beast's Castle.png" id="336_Beasts Castle" data-flag="@X" onclick="openSidebar('336_Beasts Castle',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\345_Port Royal.png" id="345_Port Royal" data-flag="@X" onclick="openSidebar('345_Port Royal',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\346_Pride Lands.png" id="346_Pride Lands" data-flag="@X" onclick="openSidebar('346_Pride Lands',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\344_Olympus Coliseum.png" id="344_Olympus Coliseum" data-flag="@X" onclick="openSidebar('344_Olympus Coliseum',false)"></div>
+				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\349_Timeless River.png" id="349_Timeless River" data-flag="@X" onclick="openSidebar('349_Timeless River',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\343_Land of Dragons.png" id="343_Land of Dragons" data-flag="@X" onclick="openSidebar('343_Land of Dragons',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\340_Halloween Town.png" id="340_Halloween Town" data-flag="@X" onclick="openSidebar('340_Halloween Town',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\334_Agrabah.png" id="334_Agrabah" data-flag="@X" onclick="openSidebar('334_Agrabah',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\348_Space Paranoids.png" id="348_Space Paranoids" data-flag="@X" onclick="openSidebar('348_Space Paranoids',false)"></div>
+				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\333_The World That Never Was.png" id="333_The World That Never Was" data-flag="@X" onclick="openSidebar('333_The World That Never Was',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\337_Daybreak Town.png" id="337_Daybreak Town" data-flag="@X" onclick="openSidebar('337_Daybreak Town',false)"></div>
+				<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+				<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+				<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+				<div id="token" class="anchor"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\1t_Elemental Performer.png" id="1t_Elemental Performer" data-flag="@X" onclick="openSidebar('1t_Elemental Performer',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\2t_Wielder.png" id="2t_Wielder" data-flag="@X" onclick="openSidebar('2t_Wielder',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\3t_Wielder.png" id="3t_Wielder" data-flag="@X" onclick="openSidebar('3t_Wielder',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\4t_Wielder.png" id="4t_Wielder" data-flag="@X" onclick="openSidebar('4t_Wielder',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\5t_Wielder.png" id="5t_Wielder" data-flag="@X" onclick="openSidebar('5t_Wielder',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\6t_Heartless Angel.png" id="6t_Heartless Angel" data-flag="@X" onclick="openSidebar('6t_Heartless Angel',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\7t_Heartless Demon.png" id="7t_Heartless Demon" data-flag="@X" onclick="openSidebar('7t_Heartless Demon',false)"></div>
+				<div class="container"><img alt="/sets\KHE-files\img\8t_Heartless Soldier.png" id="8t_Heartless Soldier" data-flag="@X" onclick="openSidebar('8t_Heartless Soldier',false)"></div>
+				<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+				<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+				<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+	</div>
+	</div>
+	<div class="sidebar" id="sidebar">
+		<div class="sidebar-container">
+			<img id="sidebar_img" class="sidebar-img" src="/img/er.png">
+			<img id="sidebar_h_img" class="sidebar-h-img">
+			<button class="flip-btn" id="sidebar-flip-btn" onclick="imgFlip('sidebar_img')"></button>
+		</div>
+		<button class="close-btn" onclick="closeSidebar()"></button>
+	</div>
+	<div class="footer"></div>
+
+	<script>
+	const delay = ms => new Promise(res => setTimeout(res, ms));
+		let specialchars = "";
+
+	document.addEventListener('DOMContentLoaded', async function() {
+		await fetch('/lists/all-cards.json')
+					.then(response => response.json())
+					.then(json => {
+						card_list = json;
+				}).catch(error => console.error('Error:', error));
+
+				await fetch('/resources/replacechars.txt')
+					.then(response => response.text())
+					.then(text => {
+						specialchars = text; 
+				}).catch(error => console.error('Error:', error));
+
+				card_list_arrayified = card_list.cards;
+
+		preloadImgs = document.getElementsByClassName('preload-hidden');
+
+		let images_loaded = [];
+
+		do {
+			await delay(100);
+			images_loaded = []
+			for (const img of preloadImgs)
+			{
+				images_loaded.push(isImageOk(img));
+			}
+		}
+		while (images_loaded.includes(false));
+
+		
+		loadImages();
+	});
+
+	function isImageOk(img) {
+		if (!img.complete || img.naturalWidth == 0) {
+			return false;
+		}
+
+		return true;
+	}
+
+	function loadImages() {
+		const images = document.querySelectorAll('.grid-container img');
+
+		images.forEach(img => {
+			const flag = img.getAttribute('data-flag');
+
+			if (flag === '@N') {
+				img.src = '/img/card_back.png';
+				img.removeAttribute("onclick");
+				img.style.cursor = 'default';
+			}
+			else
+			{
+				img.src = img.alt;
+
+				if (flag === '@E') {
+					img.removeAttribute("onclick");
+					img.style.cursor = 'default';
+				}
+			}
+
+			img.style.visibility = 'visible';
+		});
+	}
+
+	window.addEventListener('resize', function(event) {
+		setSidebarTop();
+	}, true);
+
+	function setSidebarTop() {
+		let vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
+		let sh = document.getElementById('sidebar').offsetHeight;
+		let height = 100 * ((vh - sh) / 2) / vh;
+		document.getElementById('sidebar').style.top = height + '%';
+	}
+
+	let horizontal = false;
+
+	function imgFlip(num) {
+		tmp = document.getElementById(num).src;
+		console.log(num);
+		document.getElementById(num).src = document.getElementById(num).dataset.alt_src;
+		document.getElementById(num).dataset.alt_src = tmp;
+
+		if (num == 'sidebar_img')
+		{
+			const rotated_img = document.getElementById('sidebar_h_img');
+			const sidebar_img = document.getElementById('sidebar_img');
+
+			if (horizontal && rotated_img.style.display == 'none')
+			{
+				rotated_img.style.display = "block";
+				sidebar_img.style.filter = "blur(2px) brightness(0.7)";
+			}
+			else
+			{
+				rotated_img.style.display = "none";
+				sidebar_img.style.filter = "";
+			}
+		}
+	}
+
+	function openSidebar(id, h = false) {
+		horizontal = h;
+		scroll_pct = window.scrollY / document.documentElement.scrollHeight;
+
+		document.getElementById('sidebar').style.display = 'grid';
+
+		const rotated_img = document.getElementById('sidebar_h_img');
+		const sidebar_img = document.getElementById('sidebar_img');
+
+		sidebar_img.src = document.getElementById(id).src;
+		rotated_img.src = document.getElementById(id).src.replace("_back", "_front");
+
+		if (horizontal && !sidebar_img.src.includes("_back"))
+		{
+			rotated_img.style.display = "block";
+			sidebar_img.style.filter = "blur(2px) brightness(0.7)";
+		}
+		else
+		{
+			rotated_img.style.display = "none";
+			sidebar_img.style.filter = "";
+		}
+
+		if (document.getElementById(id).dataset.alt_src)
+		{
+			document.getElementById('sidebar_img').dataset.alt_src = document.getElementById(id).dataset.alt_src;
+			document.getElementById('sidebar-flip-btn').style.display = 'block';
+		}
+		else
+		{
+			delete document.getElementById('sidebar_img').dataset.alt_src;
+			document.getElementById('sidebar-flip-btn').style.display = 'none';
+		}
+		document.getElementById('main-content').style.width = '60%';
+
+		scroll_pos = scroll_pct * document.documentElement.scrollHeight;
+		window.scrollTo(window.scrollX, scroll_pos);
+		setSidebarTop();
+	}
+
+	function closeSidebar() {
+		scroll_pct = window.scrollY / document.documentElement.scrollHeight;
+
+		document.getElementById('sidebar').style.display = 'none';
+		document.getElementById('main-content').style.width = '100%';
+
+
+		scroll_pos = scroll_pct * document.documentElement.scrollHeight;
+		window.scrollTo(window.scrollX, scroll_pos);
+	}
+
+	function rolldown() {
+		var sets = document.querySelectorAll('.inactive');
+		for(const set of sets)
+		{
+			set.style.height = "auto";
+			set.style.margin = "5px";
+		}
+	}
+
+	function rollup() {
+		var sets = document.querySelectorAll('.inactive');
+		for(const set of sets)
+		{
+			set.style.height = "0px";
+			set.style.margin = "0px 5px";
+		}
+	}
+
+	document.getElementById("search").addEventListener("keypress", function(event) {
+		if (event.key === "Enter") {
+			event.preventDefault();
+			search();
+		}
+	});
+
+	function search() {
+		const url = new URL('search', window.location.origin);
+		url.searchParams.append('search', document.getElementById("search").value);
+		window.location.href = url;
+	}
+
+		function randomCard() {
+				let i = Math.floor(Math.random() * (card_list_arrayified.length + 1));
+				let random_card = card_list_arrayified[i];
+
+				const url = new URL('card', window.location.origin);
+				const params = {
+					set: random_card.set,
+					num: random_card.number,
+					name: random_card.card_name
+				}
+				for (const key in params) {
+					url.searchParams.append(key, params[key]);
+				}
+
+				window.location.href = url;
+			}
+	</script>
+</body>
+</html>
